@@ -2,50 +2,50 @@ const Portfolio = () => {
   const portfolioItems = [
     {
       id: 1,
-      title: 'Season Programming & Literary Curation',
-      category: 'Arts Administration',
+      title: 'Season Curation (2018-2024)',
+      category: 'Literary Management',
       description:
-        'Led season planning and script evaluation for 6+ play seasons, curating diverse programming that balanced artistic excellence with audience engagement.',
+        'Curated six seasons at Salt Lake Acting Company, reading 500+ scripts annually. Championed [specific play titles to be added], which [specific outcomes - attendance %, critical acclaim, awards].',
       image: null,
     },
     {
       id: 2,
-      title: 'New Play Development',
-      category: 'Literary Management',
+      title: 'Playwright Development Programs',
+      category: 'New Play Development',
       description:
-        'Facilitated playwright workshops, staged readings, and development processes for emerging and established playwrights, fostering innovative theatrical voices.',
+        'Launched workshop series for emerging playwrights. Nurtured [X] new works from first draft to production, including collaborations with [playwright names to be added].',
       image: null,
     },
     {
       id: 3,
-      title: 'Community Engagement Initiatives',
-      category: 'Outreach',
+      title: '[Specific Production Title]',
+      category: 'Production Highlight',
       description:
-        'Designed and implemented community programs connecting diverse audiences with theatre, including post-show discussions, educational workshops, and accessibility initiatives.',
+        'Championed this production from script selection through opening night. Result: [specific metrics - sold out X% of performances, brought in X new audience demographic, won X awards].',
       image: null,
     },
     {
       id: 4,
-      title: 'Fundraising Campaigns',
-      category: 'Development',
+      title: 'Grant Success: [Foundation Name]',
+      category: 'Fundraising',
       description:
-        'Coordinated successful fundraising campaigns, grant applications, and donor cultivation events supporting artistic programming and organizational growth.',
+        'Wrote successful grant application securing [$X amount] from [foundation name] to support [specific program]. This funding enabled [specific artistic outcome].',
       image: null,
     },
     {
       id: 5,
-      title: 'Strategic Communication',
-      category: 'Marketing',
+      title: 'Community Access Initiatives',
+      category: 'Audience Development',
       description:
-        'Developed comprehensive marketing strategies and audience development plans across digital and traditional channels to expand patron base and community reach.',
+        'Created programs bringing theatre to underserved communities. Increased accessibility through [specific initiatives], resulting in [X% growth in diverse audiences].',
       image: null,
     },
     {
       id: 6,
-      title: 'Operational Excellence',
-      category: 'Operations',
+      title: '[Notable Reading or Workshop]',
+      category: 'New Play Development',
       description:
-        'Streamlined organizational workflows, improved operational systems, and managed complex projects across multiple departments and stakeholder groups.',
+        'Organized staged reading/workshop of [play title] by [playwright]. Brought together [X artists/community members], leading to [outcome - full production, publication, etc.].',
       image: null,
     },
   ];
@@ -62,11 +62,11 @@ const Portfolio = () => {
     <section id="portfolio" className="section-container bg-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
-          Featured Work
+          Featured Projects
         </h2>
         <p className="text-center text-text-light text-lg mb-12 max-w-3xl mx-auto">
-          A selection of projects and initiatives that showcase my expertise in theatre
-          administration, literary management, and community engagement.
+          Highlights from my work championing new plays, supporting playwrights, and building audiences.
+          <span className="block mt-2 text-sm italic">(Placeholders below - ready to customize with your specific achievements!)</span>
         </p>
 
         {/* Category Filter */}

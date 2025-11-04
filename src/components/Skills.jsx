@@ -1,144 +1,76 @@
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Arts Administration',
+      title: 'Literary & Artistic',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
-            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
           />
         </svg>
       ),
       skills: [
-        'Literary Management',
-        'Season Planning',
-        'Artistic Direction',
-        'Script Evaluation',
-        'Playwright Relations',
+        'Script evaluation & dramaturgy',
+        'Playwright development & mentorship',
+        'Season programming & curation',
+        'Artistic collaboration',
+        'New play commissioning',
       ],
     },
     {
-      title: 'Operations & Management',
+      title: 'Operations & Fundraising',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
-            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
           />
         </svg>
       ),
       skills: [
-        'Project Management',
-        'Process Improvement',
-        'Budget Management',
-        'Vendor Relations',
-        'Workflow Optimization',
+        'Grant writing & foundation relations',
+        'Donor cultivation & stewardship',
+        'Budget management',
+        'Theatre operations & production support',
       ],
     },
     {
-      title: 'Development & Fundraising',
+      title: 'Community & Audience',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
-            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
           />
         </svg>
       ),
       skills: [
-        'Grant Writing',
-        'Donor Stewardship',
-        'Campaign Management',
-        'Foundation Relations',
-        'Event Planning',
-      ],
-    },
-    {
-      title: 'Communication & Engagement',
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
-          />
-        </svg>
-      ),
-      skills: [
-        'Strategic Communication',
-        'Community Outreach',
-        'Audience Development',
-        'Public Speaking',
-        'Relationship Building',
-      ],
-    },
-    {
-      title: 'Marketing & Digital',
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
-          />
-        </svg>
-      ),
-      skills: [
-        'Marketing Strategy',
-        'Social Media Management',
-        'Content Creation',
-        'Data Analysis',
-        'Brand Development',
-      ],
-    },
-    {
-      title: 'Technical Proficiency',
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-          />
-        </svg>
-      ),
-      skills: [
-        'Microsoft Office Suite',
-        'Google Workspace',
-        'Project Management Tools',
-        'Database Management',
-        'AI & Prompt Engineering',
+        'Audience development & outreach',
+        'Post-show discussions & talkbacks',
+        'Community partnership building',
+        'Educational programming',
       ],
     },
   ];
 
   return (
     <section id="skills" className="section-container bg-background-dark">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
-          Skills & Competencies
+          Areas of Expertise
         </h2>
         <p className="text-center text-text-light text-lg mb-12 max-w-3xl mx-auto">
-          A comprehensive skill set combining creative expertise with operational excellence.
+          Where artistic sensibility meets operational know-how.
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
             <div
               key={index}

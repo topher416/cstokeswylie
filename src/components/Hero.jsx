@@ -22,12 +22,12 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl md:text-2xl lg:text-3xl text-text-light mb-8 md:mb-12 font-light">
-            Theatre Professional | Arts Administrator | Community Builder
+            Actor | Literary Manager | Theatre Administrator
           </p>
 
           <p className="text-base md:text-lg text-text-light max-w-2xl mx-auto mb-10 md:mb-12 leading-relaxed">
-            Bringing together artistic excellence, operational expertise, and community engagement
-            to create meaningful theatrical experiences.
+            I find the playwrights others overlook and build the systems that let their work shine—
+            six years championing new voices at Salt Lake Acting Company, from first draft to opening night.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

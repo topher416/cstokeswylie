@@ -18,24 +18,22 @@ const About = () => {
           <div className="order-1 md:order-2 space-y-6">
             <div className="prose prose-lg">
               <p className="text-text leading-relaxed">
-                With over a decade of experience in theatre arts and administration, I bridge the worlds
-                of creative performance and strategic operations. My journey has taken me from the stage
-                to the organizational helm, where I've discovered my passion for building vibrant artistic
-                communities.
+                My journey in theatre started on stage, earning my BFA in Theatre from the University of Utah.
+                But I discovered my true calling wasn't just performing—it was creating the conditions for
+                other artists to do their best work.
               </p>
 
               <p className="text-text leading-relaxed">
-                As Literary Manager at Salt Lake Acting Company for over six years, I championed new works,
-                fostered playwright relationships, and helped shape seasons that resonated deeply with our
-                community. My work spans artistic direction, fundraising, audience development, and
-                operational excellence—always with an eye toward accessibility and community engagement.
+                As Literary Manager at Salt Lake Acting Company (2018–2024), I read over 500 scripts annually,
+                cultivated relationships with playwrights from first draft to opening night, and helped shape
+                six seasons of programming. I built the donor partnerships that made bold artistic choices possible,
+                and created community programs that brought new audiences into the theatre for the first time.
               </p>
 
               <p className="text-text leading-relaxed">
-                What drives me is the belief that theatre has the power to transform communities. Whether
-                I'm evaluating scripts, managing complex projects, or building relationships with donors
-                and partners, I'm committed to creating spaces where artistic excellence and community
-                connection thrive together.
+                I believe the best theatre administration is invisible to audiences but essential to artists.
+                My work means keeping the trains running—managing budgets, writing grants, coordinating logistics—so
+                that playwrights, directors, and actors can focus on what they do best: making transformative theatre.
               </p>
             </div>
 
@@ -51,15 +49,15 @@ const About = () => {
 
             {/* Key Specialties */}
             <div className="mt-6">
-              <h3 className="text-xl font-semibold mb-4 text-primary">Core Strengths</h3>
+              <h3 className="text-xl font-semibold mb-4 text-primary">What I Do Best</h3>
               <div className="flex flex-wrap gap-2">
                 {[
-                  'Community Building',
-                  'Fundraising',
-                  'Artistic Direction',
-                  'Operational Excellence',
-                  'Literary Management',
-                  'Strategic Planning',
+                  'New Play Development',
+                  'Playwright Relationships',
+                  'Season Curation',
+                  'Grant Writing & Fundraising',
+                  'Audience Development',
+                  'Theatre Operations',
                 ].map((specialty) => (
                   <span
                     key={specialty}

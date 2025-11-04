@@ -46,9 +46,18 @@ const Contact = () => {
     <section id="contact" className="section-container bg-white">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
+
+        {/* Availability Status */}
+        <div className="bg-accent/10 border-2 border-accent rounded-lg p-6 mb-8 max-w-2xl mx-auto">
+          <h3 className="text-xl font-bold text-accent mb-2">Currently Available</h3>
+          <p className="text-text">
+            Seeking literary management, artistic administration, or development roles in theatre.
+            <span className="block mt-1">Open to full-time, consulting, or interim positions.</span>
+          </p>
+        </div>
+
         <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto">
-          I'm always interested in connecting with fellow theatre professionals, arts
-          organizations, and creative collaborators. Let's discuss how we can work together.
+          Let's connect about opportunities in theatre, creative collaborations, or how I can support your organization.
         </p>
 
         <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -77,11 +86,11 @@ const Contact = () => {
 
         <div className="bg-gradient-to-br from-accent/10 to-primary/10 rounded-lg p-8 md:p-12">
           <h3 className="text-2xl md:text-3xl font-bold mb-4 text-primary">
-            Let's Create Something Meaningful
+            Let's Work Together
           </h3>
           <p className="text-text-light mb-8">
-            Whether you're looking for an experienced arts administrator, literary manager, or
-            strategic partner, I'd love to hear about your project or opportunity.
+            Whether you're hiring for a literary manager role, need consulting on season programming,
+            or want to discuss new play development—I'd love to hear from you.
           </p>
           <a href="mailto:cstokeswylie@gmail.com" className="btn-primary inline-block">
             Send Me an Email
