@@ -43,6 +43,8 @@ const AutoCarousel = ({
               i === index ? 'opacity-100' : 'opacity-0'
             }`}
             loading={i === 0 ? 'eager' : 'lazy'}
+            fetchpriority={i === 0 ? 'high' : 'auto'}
+            decoding="async"
           />
         );
       })}

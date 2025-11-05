@@ -42,14 +42,15 @@ const Hero = () => {
     '/images/tiltedplace3.jpg',
   ];
 
-  // Shuffle images for a fresh order each load
+  // Prefer a lightweight first image; shuffle the rest
+  const preferredFirst = '/images/sleepinggiant1cropped.jpg';
   const heroImages = useMemo(() => {
-    const arr = [...baseImages];
-    for (let i = arr.length - 1; i > 0; i -= 1) {
+    const rest = baseImages.filter((src) => src !== preferredFirst);
+    for (let i = rest.length - 1; i > 0; i -= 1) {
       const j = Math.floor(Math.random() * (i + 1));
-      [arr[i], arr[j]] = [arr[j], arr[i]];
+      [rest[i], rest[j]] = [rest[j], rest[i]];
     }
-    return arr;
+    return [preferredFirst, ...rest];
   }, []);
 
   useEffect(() => {
