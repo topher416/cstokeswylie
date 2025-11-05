@@ -1,8 +1,8 @@
-import { useMemo, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Hero = () => {
-  // Restrict hero rotation to curated selections
-  const baseImages = [
+  // Restrict hero rotation to curated selections (desktop)
+  const desktopBase = [
     '/images/deathofadriver3cropped.jpg',
     '/images/deathofadriver5cropped.jpg',
     '/images/funnything10.JPG',
@@ -21,15 +21,37 @@ const Hero = () => {
     '/images/vibratorplay4.JPG',
   ];
 
-  // Prefer a lightweight first image; shuffle the rest
-  const preferredFirst = '/images/sleepinggiant1cropped.jpg';
-  const heroImages = useMemo(() => {
-    const rest = baseImages.filter((src) => src !== preferredFirst);
-    for (let i = rest.length - 1; i > 0; i -= 1) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [rest[i], rest[j]] = [rest[j], rest[i]];
-    }
-    return [preferredFirst, ...rest];
+  // Mobile-only curated selections
+  const mobileBase = [
+    '/images/deathofadriver3cropped_mobile_crop.jpg',
+    '/images/funnything10_mobile_crop.JPG',
+    '/images/funnything9cropped.jpg',
+    '/images/harburgate1cropped_mobile_crop.jpg',
+    '/images/midsummer5.JPG',
+    '/images/vibratorplay10_mobile_crop.JPG',
+  ];
+
+  const [heroImages, setHeroImages] = useState([]);
+  // Prefer a lightweight first image; shuffle the rest, and pick set based on viewport
+  useEffect(() => {
+    const select = () => {
+      const mq = window.matchMedia('(max-width: 768px)');
+      const base = mq.matches ? mobileBase : desktopBase;
+      if (!base.length) { setHeroImages([]); return; }
+      const preferred = base.includes('/images/sleepinggiant1cropped.jpg') ? '/images/sleepinggiant1cropped.jpg' : base[0];
+      const rest = base.filter((s) => s !== preferred);
+      for (let i = rest.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [rest[i], rest[j]] = [rest[j], rest[i]];
+      }
+      setHeroImages([preferred, ...rest]);
+    };
+    select();
+    const mq = window.matchMedia('(max-width: 768px)');
+    const handler = () => select();
+    if (mq.addEventListener) mq.addEventListener('change', handler); else mq.addListener(handler);
+    return () => { if (mq.removeEventListener) mq.removeEventListener('change', handler); else mq.removeListener(handler); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const [index, setIndex] = useState(0);
