@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .mask { fill: #2C3E50; }
+      .highlight { fill: #A0522D; }
+    </style>
+  </defs>
+
+  <!-- Comedy Mask -->
+  <g transform="translate(10, 20)">
+    <!-- Mask face -->
+    <ellipse cx="20" cy="25" rx="18" ry="22" class="mask"/>
+
+    <!-- Eyes -->
+    <ellipse cx="15" cy="22" rx="3" ry="4" fill="white"/>
+    <ellipse cx="25" cy="22" rx="3" ry="4" fill="white"/>
+    <circle cx="15" cy="23" r="1.5" class="highlight"/>
+    <circle cx="25" cy="23" r="1.5" class="highlight"/>
+
+    <!-- Smiling mouth -->
+    <path d="M 12 32 Q 20 38 28 32" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Tragedy Mask -->
+  <g transform="translate(52, 20)">
+    <!-- Mask face -->
+    <ellipse cx="20" cy="25" rx="18" ry="22" class="mask"/>
+
+    <!-- Eyes -->
+    <ellipse cx="15" cy="22" rx="3" ry="4" fill="white"/>
+    <ellipse cx="25" cy="22" rx="3" ry="4" fill="white"/>
+    <circle cx="15" cy="23" r="1.5" class="highlight"/>
+    <circle cx="25" cy="23" r="1.5" class="highlight"/>
+
+    <!-- Frowning mouth -->
+    <path d="M 12 36 Q 20 30 28 36" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
