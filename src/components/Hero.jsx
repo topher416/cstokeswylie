@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
+import AutoCarousel from './AutoCarousel';
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -68,20 +69,14 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-end justify-start overflow-hidden p-4 md:p-8 lg:p-12 pb-24">
-      {/* Rotating Background Images */}
-      {heroImages.map((image, index) => (
-        <div
-          key={image}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            index === currentImageIndex ? 'opacity-100' : 'opacity-0'
-          }`}
-          style={{
-            backgroundImage: `url(${image})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
-      ))}
+      {/* Rotating Background Images with portrait-aware fit (pillarbox) */}
+      <AutoCarousel
+        images={heroImages}
+        interval={5000}
+        className="absolute inset-0 bg-black"
+        fit="auto"
+        imgClassName=""
+      />
 
       {/* Dark Overlay for Text Readability */}
       <div className="absolute inset-0 bg-black/30"></div>
