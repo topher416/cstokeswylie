@@ -8,7 +8,6 @@ const Hero = () => {
     '/images/at_oct13_pygmalion1.jpg',
     '/images/bullshark1.jpg',
     '/images/bullshark2.jpg',
-    '/images/cassandra_stokes_wylie_backstage_headshot.jpeg',
     '/images/crucible1.jpg',
     '/images/crucible2.jpg',
     '/images/crucible3.webp',
