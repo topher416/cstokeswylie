@@ -1,43 +1,108 @@
 import AutoCarousel from './AutoCarousel';
 import LocationTag from './LocationTag';
+import YearTag from './YearTag';
 import { useState } from 'react';
 
 const Portfolio = () => {
   const imageMap = {
-    'Harbur Gate (World Premiere, 2017) — Alyson Moss': [
-      '/images/harburgate1cropped.jpg',
-      '/images/harburgate2cropped.jpg',
-      '/images/harburgate3cropped.jpg',
+    'You Will Get Sick (Regional Premiere, 2024) — Assistant Director — by Noah Diaz': [
+      '/images/youwillgetsick1.jpg',
+      '/images/youwillgetsick2.jpg',
     ],
-    'Bull Shark Attack (World Premiere, 2016) — Tanya': [
-      '/images/bullshark1.jpg',
-      '/images/bullshark2.jpg',
-      '/images/bullshark3.JPG',
-      '/images/slac_bullsharkattack_090416~4.jpg',
+    'Sleeping Giant (World Premiere, 2022) — Ensemble/Multiple roles — by Steve Yockey': [
+      '/images/sleepinggiant1cropped.jpg',
+      '/images/sleepinggiant2cropped.jpg',
+      '/images/sleepinggiant3cropped.jpg',
     ],
-    'A Funny Thing Happened on the Way to the Gynecologic Oncology Unit at Memorial Sloan Kettering Cancer Center of New York City (Utah Premiere, 2018) — Karla': [
+    'Death of a Driver (Utah Premiere, 2019) — Sarah — by Will Snider': [
+      '/images/deathofadriver3cropped.jpg',
+      '/images/deathofadriver5cropped.jpg',
+      '/images/deathofadriver8cropped.jpg',
+    ],
+    'A Funny Thing Happened on the Way to the Gynecologic Oncology Unit at Memorial Sloan Kettering Cancer Center of New York City (Utah Premiere, 2018) — Karla — by Halley Feiffer': [
       '/images/funnything4cropped.jpg',
       '/images/funnything5cropped.jpg',
       '/images/funnything9cropped.jpg',
       '/images/funnything10.JPG',
     ],
-    'Death of a Driver (Utah Premiere, 2019) — Sarah': [
-      '/images/deathofadriver3cropped.jpg',
-      '/images/deathofadriver5cropped.jpg',
-      '/images/deathofadriver8cropped.jpg',
+    'Harbur Gate (World Premiere, 2017) — Alyson Moss — by Kathleen Cahill': [
+      '/images/harburgate1cropped.jpg',
+      '/images/harburgate2cropped.jpg',
+      '/images/harburgate3cropped.jpg',
     ],
-    'Sleeping Giant (World Premiere, 2022) — Ensemble/Multiple roles': [
-      '/images/sleepinggiant1cropped.jpg',
-      '/images/sleepinggiant2cropped.jpg',
-      '/images/sleepinggiant3cropped.jpg',
+    'Bull Shark Attack (World Premiere, 2016) — Tanya — by Troy Deutsch': [
+      '/images/bullshark1.jpg',
+      '/images/bullshark2.jpg',
+      '/images/bullshark3.JPG',
+      '/images/slac_bullsharkattack_090416~4.jpg',
     ],
   };
   const portfolioItems = [
     {
       id: 1,
-      title: 'Harbur Gate (World Premiere, 2017) — Alyson Moss',
+      title: 'You Will Get Sick (Regional Premiere, 2024) — Assistant Director — by Noah Diaz',
+      category: 'Assistant Director',
+      location: 'Salt Lake City, UT',
+      year: '2024',
+      description:
+        'Assistant director for Noah Diaz’s lyrical meditation on illness, care, and the stories we tell to keep going. Reviews called SLAC’s staging “smartly, directly, solidly acted” and “thought-provoking,” noting how humor and existential dread coexist in the piece.',
+      links: [
+        { href: 'https://www.saltlakeactingcompany.org/shows-ticketing/play-archive/item/1716-you-will-get-sick' },
+        { href: 'https://www.theutahreview.com/noah-diazs-you-will-get-sick-receives-smartly-directly-solidly-acted-regional-premiere-at-salt-lake-acting-company/' },
+        { href: 'https://gephardtdaily.com/local/review-you-will-get-sick-at-slac-will-make-you-ponder-the-meaning-of-life-death/' },
+        { href: 'https://frontrowreviewers.com/?p=22403' },
+        { href: 'https://utahtheatrebloggers.com/913113/slac-provides-a-healthy-dose-of-humanity-with-you-will-get-sick' },
+      ],
+    },
+    {
+      id: 2,
+      title: 'Sleeping Giant (World Premiere, 2022) — Ensemble/Multiple roles — by Steve Yockey',
       category: 'World Premiere',
       location: 'Salt Lake City, UT',
+      year: '2022',
+      description:
+        'Steve Yockey’s surreal, darkly comic mosaic about belief and the monsters we wake. Originated multiple characters in a four-actor ensemble; the production continued SLAC’s emphasis on new-play development through readings and labs.',
+      links: [
+        { href: 'https://www.saltlakeactingcompany.org/2022-2023/item/1632-sleeping-giant' },
+      ],
+    },
+    {
+      id: 3,
+      title: 'Death of a Driver (Utah Premiere, 2019) — Sarah — by Will Snider',
+      category: 'Utah Premiere',
+      location: 'Salt Lake City, UT',
+      year: '2019',
+      description:
+        'Two-hander by Will Snider about an American engineer and her Kenyan colleague whose friendship buckles under class, politics, and power. Opened SLAC’s 49th season; reviews praised taut pacing and emotionally precise performances.',
+      links: [
+        { href: 'https://www.saltlakeactingcompany.org/shows-ticketing/play-archive/item/1467-death-of-a-driver' },
+        { href: 'https://slco.org/zap/blog/salt-lake-acting-company-and-death-of-a-driver/' },
+        { href: 'https://www.theutahreview.com/salt-lake-acting-company-opens-49th-season-with-riveting-utah-premiere-of-death-of-a-driver/' },
+        { href: 'https://frontrowreviewersutah.com/?p=13521' },
+        { href: 'https://dailyutahchronicle.com/2019/09/14/slacs-death-of-a-driver-confronts-the-rollercoaster-of-friendship/' },
+        { href: 'https://www.abc4.com/gtu/sitting-down-with-the-actors-from-death-of-a-driver/' },
+      ],
+    },
+    {
+      id: 4,
+      title: 'A Funny Thing Happened on the Way to the Gynecologic Oncology Unit at Memorial Sloan Kettering Cancer Center of New York City (Utah Premiere, 2018) — Karla — by Halley Feiffer',
+      category: 'Utah Premiere',
+      location: 'Salt Lake City, UT',
+      year: '2018',
+      description:
+        'Played Karla in Halley Feiffer’s brash, big-hearted comedy about two adult children colliding beside their hospitalized mothers. SLAC’s archive compiles reviews and production details; simultaneous Tribune coverage spotlighted SLAC’s adoption of intimacy direction practices to keep artists safe during vulnerable scenes.',
+      links: [
+        { href: 'https://www.saltlakeactingcompany.org/shows-ticketing/play-archive/item/1389-a-funny-thing-happened-on-the-way-to-the-gynecologic-oncology-unit-at-memorial-sloan-kettering-cancer-center-of-new-york-city' },
+        { href: 'https://www.sltrib.com/artsliving/2018/09/30/help-actors-feel-safe/' },
+        { href: 'https://www.cityweekly.net/BuzzBlog/archives/2018/09/20/theater-review-salt-lake-acting-companys-a-funny-thing-happened' },
+      ],
+    },
+    {
+      id: 5,
+      title: 'Harbur Gate (World Premiere, 2017) — Alyson Moss — by Kathleen Cahill',
+      category: 'World Premiere',
+      location: 'Salt Lake City, UT',
+      year: '2017',
       description:
         'World premiere of Kathleen Cahill’s triptych about women in the military and the aftermath of war. Originated Alyson Moss; production developed through SLAC’s new-play pipeline and supported by an Edgerton Foundation New Play Award. Press called the staging “powerful,” highlighting stories drawn from Iraq/Afghanistan service members and MST (military sexual trauma).',
       links: [
@@ -51,10 +116,11 @@ const Portfolio = () => {
       ],
     },
     {
-      id: 2,
-      title: 'Bull Shark Attack (World Premiere, 2016) — Tanya',
+      id: 6,
+      title: 'Bull Shark Attack (World Premiere, 2016) — Tanya — by Troy Deutsch',
       category: 'World Premiere',
       location: 'Salt Lake City, UT',
+      year: '2016',
       description:
         'Originated Tanya in Troy Deutsch’s two-hander dark comedy about small-town longing, myth, and menace. The run opened SLAC’s season; coverage framed it as “Shark Week(s) at SLAC),” noting the show’s blend of physical comedy and emotional volatility.',
       links: [
@@ -63,72 +129,6 @@ const Portfolio = () => {
         { href: 'http://www.cityweekly.net/TheDailyFeed/archives/2016/09/07/salt-lake-acting-company-bull-shark-attack' },
         { href: 'http://www.sltrib.com/entertainment/4295199-155/salt-lake-acting-company-world-premiere' },
         { href: 'http://www.cityweekly.net/utah/the-essential-aande-picks-for-sept-22-28/Content?oid=3467735' },
-      ],
-    },
-    {
-      id: 3,
-      title: 'A Funny Thing Happened on the Way to the Gynecologic Oncology Unit at Memorial Sloan Kettering Cancer Center of New York City (Utah Premiere, 2018) — Karla',
-      category: 'Utah Premiere',
-      location: 'Salt Lake City, UT',
-      description:
-        'Played Karla in Halley Feiffer’s brash, big-hearted comedy about two adult children colliding beside their hospitalized mothers. SLAC’s archive compiles reviews and production details; simultaneous Tribune coverage spotlighted SLAC’s adoption of intimacy direction practices to keep artists safe during vulnerable scenes.',
-      links: [
-        { href: 'https://www.saltlakeactingcompany.org/shows-ticketing/play-archive/item/1389-a-funny-thing-happened-on-the-way-to-the-gynecologic-oncology-unit-at-memorial-sloan-kettering-cancer-center-of-new-york-city' },
-        { href: 'https://www.sltrib.com/artsliving/2018/09/30/help-actors-feel-safe/' },
-        { href: 'https://www.cityweekly.net/BuzzBlog/archives/2018/09/20/theater-review-salt-lake-acting-companys-a-funny-thing-happened' },
-      ],
-    },
-    {
-      id: 4,
-      title: 'Death of a Driver (Utah Premiere, 2019) — Sarah',
-      category: 'Utah Premiere',
-      location: 'Salt Lake City, UT',
-      description:
-        'Two-hander by Will Snider about an American engineer and her Kenyan colleague whose friendship buckles under class, politics, and power. Opened SLAC’s 49th season; reviews praised taut pacing and emotionally precise performances.',
-      links: [
-        { href: 'https://www.saltlakeactingcompany.org/shows-ticketing/play-archive/item/1467-death-of-a-driver' },
-        { href: 'https://slco.org/zap/blog/salt-lake-acting-company-and-death-of-a-driver/' },
-        { href: 'https://www.theutahreview.com/salt-lake-acting-company-opens-49th-season-with-riveting-utah-premiere-of-death-of-a-driver/' },
-        { href: 'https://frontrowreviewersutah.com/?p=13521' },
-        { href: 'https://dailyutahchronicle.com/2019/09/14/slacs-death-of-a-driver-confronts-the-rollercoaster-of-friendship/' },
-        { href: 'https://www.abc4.com/gtu/sitting-down-with-the-actors-from-death-of-a-driver/' },
-      ],
-    },
-    {
-      id: 5,
-      title: 'Sleeping Giant (World Premiere, 2022) — Ensemble/Multiple roles',
-      category: 'World Premiere',
-      location: 'Salt Lake City, UT',
-      description:
-        'Steve Yockey’s surreal, darkly comic mosaic about belief and the monsters we wake. Originated multiple characters in a four-actor ensemble; the production continued SLAC’s emphasis on new-play development through readings and labs.',
-      links: [
-        { href: 'https://www.saltlakeactingcompany.org/2022-2023/item/1632-sleeping-giant' },
-      ],
-    },
-    {
-      id: 6,
-      title: 'Yoga Play (Utah Premiere, 2023) — Assistant Director',
-      category: 'Assistant Director',
-      location: 'Salt Lake City, UT',
-      description:
-        'Assistant director on Dipika Guha’s sharp satire of the wellness apparel industry, identity, and the commodification of “enlightenment.” SLAC’s season page credits the AD role and outlines the creative team and production run.',
-      links: [
-        { href: 'https://www.saltlakeactingcompany.org/2022-2023/item/1635-yoga-play' },
-      ],
-    },
-    {
-      id: 7,
-      title: 'You Will Get Sick (Regional Premiere, 2024) — Assistant Director',
-      category: 'Assistant Director',
-      location: 'Salt Lake City, UT',
-      description:
-        'Assistant director for Noah Diaz’s lyrical meditation on illness, care, and the stories we tell to keep going. Reviews called SLAC’s staging “smartly, directly, solidly acted” and “thought-provoking,” noting how humor and existential dread coexist in the piece.',
-      links: [
-        { href: 'https://www.saltlakeactingcompany.org/shows-ticketing/play-archive/item/1716-you-will-get-sick' },
-        { href: 'https://www.theutahreview.com/noah-diazs-you-will-get-sick-receives-smartly-directly-solidly-acted-regional-premiere-at-salt-lake-acting-company/' },
-        { href: 'https://gephardtdaily.com/local/review-you-will-get-sick-at-slac-will-make-you-ponder-the-meaning-of-life-death/' },
-        { href: 'https://frontrowreviewers.com/?p=22403' },
-        { href: 'https://utahtheatrebloggers.com/913113/slac-provides-a-healthy-dose-of-humanity-with-you-will-get-sick' },
       ],
     },
   ];
@@ -195,8 +195,11 @@ const Portfolio = () => {
                 <h3 className="text-xl font-bold text-primary mb-1 group-hover:text-accent transition-colors">
                   {item.title}
                 </h3>
-                {item.location && (
-                  <div className="mb-2"><LocationTag text={item.location} /></div>
+                {(item.year || item.location) && (
+                  <div className="mb-2 flex items-center gap-2">
+                    {item.year && <YearTag text={item.year} />}
+                    {item.location && <LocationTag text={item.location} />}
+                  </div>
                 )}
                 <p className="text-text-light leading-relaxed mb-3">{item.description}</p>
                 {item.links && item.links.length > 0 && (
