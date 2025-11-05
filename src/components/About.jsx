@@ -55,10 +55,10 @@ const About = () => {
                 <div>
                   <div className="font-medium text-primary mb-1">Additional Training</div>
                   <ul className="list-disc pl-5 space-y-1">
-                    <li>Shakespeare &amp; Company</li>
-                    <li>Stella Adler Academy</li>
-                    <li>Steppenwolf West</li>
+                    <li>Steppenwolf West (2006)</li>
+                    <li>Stella Adler Academy (2007)</li>
                     <li>Milwaukee Repertory Theater (2008-2009)</li>
+                    <li>Shakespeare &amp; Company (2014)</li>
                   </ul>
                 </div>
               </div>
