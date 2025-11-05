@@ -4,6 +4,7 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Performance from './components/Performance';
 import Portfolio from './components/Portfolio';
+import CriticalAcclaim from './components/CriticalAcclaim';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -17,6 +18,7 @@ function App() {
       <Experience />
       <Performance />
       <Portfolio />
+      <CriticalAcclaim />
       <Skills />
       <Contact />
       <Footer />

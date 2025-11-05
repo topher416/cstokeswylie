@@ -18,22 +18,24 @@ const About = () => {
           <div className="order-1 md:order-2 space-y-6">
             <div className="prose prose-lg">
               <p className="text-text leading-relaxed">
-                My journey in theatre started on stage, earning my BFA in Theatre from the University of Utah.
-                But I discovered my true calling wasn't just performing—it was creating the conditions for
-                other artists to do their best work.
+                I've spent over a decade in theatre—both on stage and behind the scenes. As an AEA actor, I've performed
+                lead roles in everything from Chekhov to world premieres, including an <strong>Edgerton Foundation New Play
+                Award</strong> winner. I know what artists need because I've been in their shoes.
               </p>
 
               <p className="text-text leading-relaxed">
                 As Literary Manager at Salt Lake Acting Company (2018–2024), I read over 500 scripts annually,
-                cultivated relationships with playwrights from first draft to opening night, and helped shape
-                six seasons of programming. I built the donor partnerships that made bold artistic choices possible,
-                and created community programs that brought new audiences into the theatre for the first time.
+                championed world premieres by nationally recognized playwrights (including Steve Yockey, creator of HBO's
+                "The Flight Attendant"), and helped shape six seasons of programming. I worked directly with playwrights
+                in developmental labs, built donor partnerships for new work, and even directed digital content—expanding
+                SLAC's artistic reach during challenging times.
               </p>
 
               <p className="text-text leading-relaxed">
                 I believe the best theatre administration is invisible to audiences but essential to artists.
                 My work means keeping the trains running—managing budgets, writing grants, coordinating logistics—so
-                that playwrights, directors, and actors can focus on what they do best: making transformative theatre.
+                that playwrights, directors, and actors can focus on making transformative theatre. I bring both artistic
+                sensibility and operational expertise, understanding what makes great theatre from both sides of the table.
               </p>
             </div>
 

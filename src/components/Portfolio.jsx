@@ -2,50 +2,50 @@ const Portfolio = () => {
   const portfolioItems = [
     {
       id: 1,
-      title: 'Season Curation (2018-2024)',
-      category: 'Literary Management',
+      title: '"Harbur Gate" - Edgerton Award Winner',
+      category: 'Award-Winning Production',
       description:
-        'Curated six seasons at Salt Lake Acting Company, reading 500+ scripts annually. Championed [specific play titles to be added], which [specific outcomes - attendance %, critical acclaim, awards].',
+        'World premiere by Kathleen Cahill that won the prestigious Edgerton Foundation New Play Award. Commissioned by National New Play Network. Critically acclaimed: "Stokes-Wylie really digs in here and turns Cahill\'s words into an intense jousting match that enlightens and provokes" - Salt Lake Magazine.',
       image: null,
     },
     {
       id: 2,
-      title: 'Playwright Development Programs',
+      title: '"Sleeping Giant" - World Premiere (2022)',
       category: 'New Play Development',
       description:
-        'Launched workshop series for emerging playwrights. Nurtured [X] new works from first draft to production, including collaborations with [playwright names to be added].',
+        'World premiere by Steve Yockey (creator of HBO\'s "The Flight Attendant"). Participated in developmental reading (May 2022) then originated role in full production (Sept-Oct 2022). Gephardt Daily praised the cast\'s ability to "seamlessly slide into the surreal" with "beautiful" multi-character performances.',
       image: null,
     },
     {
       id: 3,
-      title: '[Specific Production Title]',
+      title: '"Death of a Driver" - Lead Role',
       category: 'Production Highlight',
       description:
-        'Championed this production from script selection through opening night. Result: [specific metrics - sold out X% of performances, brought in X new audience demographic, won X awards].',
+        'Lead role as Sarah in this political thriller by Will Snider, following its Off-Broadway world premiere at Urban Stages NYC. Two-person show exploring American-African relationships, developed through SLAC\'s 2018 Playwrights\' Lab.',
       image: null,
     },
     {
       id: 4,
-      title: 'Grant Success: [Foundation Name]',
-      category: 'Fundraising',
+      title: 'SLAC New Play Sounding Series',
+      category: 'New Play Development',
       description:
-        'Wrote successful grant application securing [$X amount] from [foundation name] to support [specific program]. This funding enabled [specific artistic outcome].',
+        'Extensive participation in staged readings of developing scripts, working directly with playwrights to shape new works before production. Key part of SLAC\'s commitment to developing original theatre.',
       image: null,
     },
     {
       id: 5,
-      title: 'Community Access Initiatives',
-      category: 'Audience Development',
+      title: 'SLAC Playwrights\' Lab Leadership',
+      category: 'Literary Management',
       description:
-        'Created programs bringing theatre to underserved communities. Increased accessibility through [specific initiatives], resulting in [X% growth in diverse audiences].',
+        'Worked with directors Kareem Fahmy, Tamilla Woodard, and dramaturg Alexandra Harbold in writer-focused laboratory settings, helping develop new plays from conception through production. Championed emerging voices and original works.',
       image: null,
     },
     {
       id: 6,
-      title: '[Notable Reading or Workshop]',
-      category: 'New Play Development',
+      title: 'Digital Shorts - Director',
+      category: 'Directing',
       description:
-        'Organized staged reading/workshop of [play title] by [playwright]. Brought together [X artists/community members], leading to [outcome - full production, publication, etc.].',
+        'Created and directed two short films for SLAC\'s Digital Shorts program: "Bleep" and "Dial-A-Laugh." Expanded artistic range beyond performance and literary management into directing and digital content.',
       image: null,
     },
   ];
@@ -64,9 +64,11 @@ const Portfolio = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
           Featured Projects
         </h2>
-        <p className="text-center text-text-light text-lg mb-12 max-w-3xl mx-auto">
-          Highlights from my work championing new plays, supporting playwrights, and building audiences.
-          <span className="block mt-2 text-sm italic">(Placeholders below - ready to customize with your specific achievements!)</span>
+        <p className="text-center text-text-light text-lg mb-4 max-w-3xl mx-auto">
+          Highlights from championing new plays, supporting playwrights, and building audiences at Salt Lake Acting Company.
+        </p>
+        <p className="text-center text-accent font-medium mb-12">
+          Including an Edgerton Foundation New Play Award winner and world premieres by nationally recognized playwrights
         </p>
 
         {/* Category Filter */}
