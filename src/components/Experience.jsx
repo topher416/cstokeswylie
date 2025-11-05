@@ -6,6 +6,18 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
+      company: 'Currently',
+      title: 'Seeking Theatre Leadership Opportunities',
+      dates: 'April 2024 – Present',
+      highlights: [
+        'Relocated to Chicago in 2024 to pursue theatre opportunities in a vibrant arts community',
+        'Available for literary management, artistic administration, or development roles in theatre',
+        'Open to full-time positions, consulting projects, or interim leadership',
+        'Freelance AI evaluation work (remote/part-time) to support theatre career transition',
+      ],
+    },
+    {
+      id: 2,
       company: 'Salt Lake Acting Company',
       title: 'Literary Manager',
       dates: 'January 2018 – April 2024',
@@ -20,7 +32,7 @@ const Experience = () => {
       ],
     },
     {
-      id: 2,
+      id: 3,
       company: 'Brotherhood Synagogue Nursery School',
       title: 'Operations Manager',
       dates: 'October 2014 – September 2017',
@@ -32,7 +44,7 @@ const Experience = () => {
       ],
     },
     {
-      id: 3,
+      id: 4,
       company: 'Salt Lake Acting Company',
       title: 'Development & Outreach Coordinator / Director of Development',
       dates: 'October 2011 – June 2013',
@@ -45,7 +57,7 @@ const Experience = () => {
       ],
     },
     {
-      id: 4,
+      id: 5,
       company: 'Salt Lake Acting Company',
       title: 'Communications & Audience Development Associate',
       dates: 'June 2010 – September 2011',
@@ -54,17 +66,6 @@ const Experience = () => {
         'Created promotional materials and coordinated audience development initiatives',
         'Grew subscriber base through targeted campaigns and community partnerships',
         'Analyzed audience data to inform programming and marketing decisions',
-      ],
-    },
-    {
-      id: 5,
-      company: 'Currently',
-      title: 'Seeking Theatre Leadership Opportunities',
-      dates: 'April 2024 – Present',
-      highlights: [
-        'Available for literary management, artistic administration, or development roles in theatre',
-        'Open to full-time positions, consulting projects, or interim leadership',
-        'Freelance AI evaluation work (remote/part-time) to support theatre career transition',
       ],
     },
   ];

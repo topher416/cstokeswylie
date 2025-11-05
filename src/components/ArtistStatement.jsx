@@ -66,27 +66,26 @@ const ArtistStatement = () => {
             <h3 className="text-2xl font-bold text-primary mb-4">Evolution as an Artist</h3>
             <div className="prose prose-lg max-w-none space-y-4">
               <p className="text-text leading-relaxed">
-                Living through the last two years has challenged my soul, my mind, and my heart in ways I never thought
-                possible. It goes without saying that for artists whose work depends on their ability to gather, the
-                pandemic has been uniquely challenging, but it has also taught me quite a bit about my own resilience
-                as an artist. My artistic endeavors shifted to remote work and I accepted projects I might not have
-                been brave enough to take on before 2020 turned everything upside down.
+                Recent years have challenged my soul, my mind, and my heart in ways I never thought possible. For
+                artists whose work depends on their ability to gather, the pandemic was uniquely challenging, but it
+                also taught me quite a bit about my own resilience. My artistic endeavors shifted to remote work and
+                I accepted projects I might not have been brave enough to take on before. I pushed beyond my comfort
+                zone in new and unexpected ways.
               </p>
 
               <p className="text-text leading-relaxed">
-                I also worked less, felt depressed, became more politically involved than I have ever been before,
-                began my journey of learning and unlearning the history of this country and the ways in which I've
-                benefited from its deeply ingrained racism. I felt more depressed, I marched, I questioned, I read,
-                I sat with my discomfort. I wrote bad haikus.
+                I also worked less, felt the weight of uncertainty, became more politically involved than I had ever
+                been before, and began my journey of learning and unlearning the history of this country and the ways
+                in which I've benefited from its deeply ingrained racism. I marched, I questioned, I read, I sat with
+                my discomfort. I wrote bad haikus.
               </p>
 
               <p className="text-text leading-relaxed font-medium">
-                As things begin to shift back to some sense of normalcy and people begin again to gather at the theater,
-                I find myself feeling immensely grateful but I also feel a deep sense of responsibility to myself as an
-                artist and a citizen of the world. I'm excited to keep learning and questioning in this next level of my
-                career. I want to continue to search out artistic avenues that not only challenge me, but that are also
-                socially responsible and inclusive. I can't have lived through the last two years and be the artist I was
-                before, and thank goodness for that.
+                As we continue to gather again at the theater, I feel both immensely grateful and deeply responsible—to
+                myself as an artist and as a citizen of the world. I'm excited to keep learning and questioning at this
+                stage of my career. I want to continue to search out artistic avenues that not only challenge me, but
+                that are also socially responsible and inclusive. I can't remain the artist I was before, and thank
+                goodness for that.
               </p>
             </div>
           </div>
