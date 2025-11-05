@@ -57,11 +57,11 @@ const Hero = () => {
       <div className="relative section-container text-left z-10 max-w-4xl">
         <div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 text-white">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-2 md:mb-4 text-white">
             Cassandra Stokes-Wylie
           </h1>
 
-          <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-8 md:mb-12 font-light">
+          <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-4 md:mb-6 font-light">
             Actor | Literary Manager | Theatre Administrator
           </p>
 
