@@ -111,7 +111,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-end justify-start overflow-hidden p-4 md:p-8 lg:p-12 pb-24">
+    <section className="relative min-h-screen flex items-end justify-start overflow-hidden">
       {/* Rotating Background Images with portrait-aware fit (pillarbox) */}
       <div className="absolute inset-0 z-0 bg-black">
         {heroImages.map((src, i) => {
@@ -136,7 +136,7 @@ const Hero = () => {
       {/* Dark Overlay for Text Readability */}
       <div className="absolute inset-0 bg-black/30 z-10"></div>
 
-      <div className="relative section-container text-left z-20 max-w-4xl">
+      <div className="relative section-container text-left z-20 max-w-4xl p-4 md:p-8 lg:p-12 mb-24 md:mb-28 lg:mb-32">
         <div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-2 md:mb-4 text-white">
