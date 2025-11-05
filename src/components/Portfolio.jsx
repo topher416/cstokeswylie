@@ -64,6 +64,10 @@ const Portfolio = () => {
         'Steve Yockey’s surreal, darkly comic mosaic about belief and the monsters we wake. Originated multiple characters in a four-actor ensemble; the production continued SLAC’s emphasis on new-play development through readings and labs.',
       links: [
         { href: 'https://www.saltlakeactingcompany.org/2022-2023/item/1632-sleeping-giant', label: 'Salt Lake Acting Company — Sleeping Giant' },
+        { href: 'https://www.slugmag.com/arts/art/performance-theatre/sleeping-giant-a-supernatural-tale-about-change-and-the-unknown/', label: 'Sleeping Giant: A Chilling Tale Of Change — SLUG Magazine' },
+        { href: 'https://gephardtdaily.com/local/review-sleeping-giant-at-salt-lake-acting-company-will-haunt-your-dreams/', label: 'Review: “Sleeping Giant” at SLAC will haunt your dreams — Gephardt Daily' },
+        { href: 'https://dailyutahchronicle.com/2022/09/25/slac-sleeping-giant/', label: '“Flight Attendant” Creator Releases “Sleeping Giant” at SLAC — The Daily Utah Chronicle' },
+        { href: 'https://www.saltlakeactingcompany.org/about/latest-news/item/1622-npss-sleeping-giant', label: 'SLAC’s NPSS returns with Steve Yockey’s “Sleeping Giant” — SLAC News' },
       ],
     },
     {
