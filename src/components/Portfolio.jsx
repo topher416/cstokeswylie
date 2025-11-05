@@ -1,4 +1,24 @@
+import AutoCarousel from './AutoCarousel';
+import { useState } from 'react';
+
 const Portfolio = () => {
+  const imageMap = {
+    '"Harbur Gate" - Edgerton Award Winner': [
+      '/images/harburgate1cropped.jpg',
+      '/images/harburgate2cropped.jpg',
+      '/images/harburgate3cropped.jpg',
+    ],
+    '"Sleeping Giant" - World Premiere (2022)': [
+      '/images/sleepinggiant1cropped.jpg',
+      '/images/sleepinggiant2cropped.jpg',
+      '/images/sleepinggiant3cropped.jpg',
+    ],
+    '"Death of a Driver" - Lead Role': [
+      '/images/deathofadriver3cropped.jpg',
+      '/images/deathofadriver5cropped.jpg',
+      '/images/deathofadriver8cropped.jpg',
+    ],
+  };
   const portfolioItems = [
     {
       id: 1,
@@ -95,13 +115,16 @@ const Portfolio = () => {
               key={item.id}
               className="group bg-background-dark rounded-lg overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              {/* Placeholder Image */}
-              <div className="aspect-video bg-gradient-to-br from-accent/30 to-primary/30 flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 group-hover:scale-110 transition-transform duration-500"></div>
-                <div className="relative text-5xl font-serif text-white/50">
-                  {item.category.substring(0, 2)}
+              {imageMap[item.title] ? (
+                <AutoCarousel images={imageMap[item.title]} interval={5000} className="aspect-video" />
+              ) : (
+                <div className="aspect-video bg-gradient-to-br from-accent/30 to-primary/30 flex items-center justify-center relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 group-hover:scale-110 transition-transform duration-500"></div>
+                  <div className="relative text-5xl font-serif text-white/50">
+                    {item.category.substring(0, 2)}
+                  </div>
                 </div>
-              </div>
+              )}
 
               {/* Content */}
               <div className="p-6">
@@ -126,8 +149,5 @@ const Portfolio = () => {
     </section>
   );
 };
-
-// Add useState import at the top
-import { useState } from 'react';
 
 export default Portfolio;

@@ -1,4 +1,37 @@
+import AutoCarousel from './AutoCarousel';
+
 const Performance = () => {
+  const imageMap = {
+    'Sleeping Giant': [
+      '/images/sleepinggiant1cropped.jpg',
+      '/images/sleepinggiant2cropped.jpg',
+      '/images/sleepinggiant3cropped.jpg',
+    ],
+    'Death of a Driver': [
+      '/images/deathofadriver3cropped.jpg',
+      '/images/deathofadriver5cropped.jpg',
+      '/images/deathofadriver8cropped.jpg',
+    ],
+    'A Funny Thing Happened on the Way to the Gynecologic Oncology Unit...': [
+      '/images/funnything4cropped.jpg',
+      '/images/funnything5cropped.jpg',
+      '/images/funnything9cropped.jpg',
+    ],
+    'Harbur Gate': [
+      '/images/harburgate1cropped.jpg',
+      '/images/harburgate2cropped.jpg',
+      '/images/harburgate3cropped.jpg',
+    ],
+    "Saturday's Voyeur": ['/images/saturdays_voyeur_2017_ensemble_dance.jpeg'],
+    'Bull Shark Attack': [
+      '/images/bullshark1.jpg',
+      '/images/bullshark2.jpg',
+      '/images/slac_bullsharkattack_090416~4.jpg',
+    ],
+    'In a Tilted Place': ['/images/tiltedplace2.jpg', '/images/tiltedplace3.jpg'],
+    'The Crucible': ['/images/crucible1.jpg', '/images/crucible2.jpg', '/images/crucible3.webp'],
+    'In the Next Room (or the vibrator play)': ['/images/at_oct13_pygmalion1.jpg'],
+  };
   const performances = [
     {
       id: 1,
@@ -141,9 +174,16 @@ const Performance = () => {
           {performances.map((performance) => (
             <div
               key={performance.id}
-              className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-300"
+              className="bg-white rounded-lg p-0 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
             >
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+              {imageMap[performance.title] ? (
+                <AutoCarousel
+                  images={imageMap[performance.title]}
+                  interval={5000}
+                  className="aspect-video"
+                />
+              ) : null}
+              <div className="p-6">
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-primary mb-2">
                     {performance.title}
