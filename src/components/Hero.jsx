@@ -35,7 +35,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-end justify-start overflow-hidden p-4 md:p-8 lg:p-12 pb-24">
       {/* Rotating Background Images */}
       {heroImages.map((image, index) => (
         <div
@@ -54,8 +54,8 @@ const Hero = () => {
       {/* Dark Overlay for Text Readability */}
       <div className="absolute inset-0 bg-black/60"></div>
 
-      <div className="relative section-container text-center z-10">
-        <div className="max-w-4xl mx-auto">
+      <div className="relative section-container text-left z-10 max-w-4xl">
+        <div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 text-white">
             Cassandra Stokes-Wylie
@@ -70,7 +70,7 @@ const Hero = () => {
             six years championing new voices at Salt Lake Acting Company, from first draft to opening night.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-start items-start">
             <button
               onClick={() => scrollToSection('portfolio')}
               className="btn-primary w-full sm:w-auto"
