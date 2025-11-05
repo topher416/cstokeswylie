@@ -11,7 +11,7 @@ const About = () => {
           <div className="order-1 md:order-1">
             <div className="aspect-[3/4] rounded-lg shadow-2xl overflow-hidden">
               <img
-                src="/images/headshot.jpeg"
+                src="/images/cassandra_stokes_wylie_backstage_headshot.jpeg"
                 alt="Cassandra Stokes-Wylie professional headshot"
                 className="w-full h-full object-cover"
               />
