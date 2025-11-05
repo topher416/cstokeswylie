@@ -1,6 +1,7 @@
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
+import ArtistStatement from './components/ArtistStatement';
 import Experience from './components/Experience';
 import Performance from './components/Performance';
 import Portfolio from './components/Portfolio';
@@ -15,6 +16,7 @@ function App() {
       <Navigation />
       <Hero />
       <About />
+      <ArtistStatement />
       <Experience />
       <Performance />
       <Portfolio />

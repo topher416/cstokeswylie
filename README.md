@@ -19,7 +19,10 @@ This website showcases Cassandra's extensive experience in theatre administratio
 - **Smooth Scrolling** - Intuitive navigation between sections
 - **Interactive Timeline** - Expandable experience cards
 - **Performance Section** - Complete acting credits with AEA status
-- **Critical Acclaim** - Reviews from regional publications and award recognition
+- **Artist Statement** - Philosophy on text and breath, values on inclusivity, and artistic evolution
+- **Critical Acclaim** - 9 review quotes from NY Times, Salt Lake Tribune, and regional publications
+- **Awards & Recognition** - Edgerton Award, Broadway World nomination, Top Ten Moments of 2019
+- **Professional Testimonial** - Letter of recommendation from Carnegie Mellon School of Drama
 - **Portfolio Projects** - Award-winning productions including Edgerton Foundation winners
 - **SEO Optimized** - Meta tags highlighting awards and achievements
 - **Accessible** - WCAG compliant with keyboard navigation
@@ -32,10 +35,11 @@ src/
 │   ├── Navigation.jsx       # Sticky navigation with smooth scroll
 │   ├── Hero.jsx             # Landing section with CTA
 │   ├── About.jsx            # Biography and education
+│   ├── ArtistStatement.jsx  # Artist philosophy, values, and evolution
 │   ├── Experience.jsx       # Professional timeline (administrative)
 │   ├── Performance.jsx      # Acting credits and performance history
 │   ├── Portfolio.jsx        # Featured projects and productions
-│   ├── CriticalAcclaim.jsx  # Reviews, quotes, and awards
+│   ├── CriticalAcclaim.jsx  # Reviews, quotes, awards, and testimonials
 │   ├── Skills.jsx           # Areas of expertise
 │   ├── Contact.jsx          # Contact information and availability
 │   └── Footer.jsx           # Site footer with links
