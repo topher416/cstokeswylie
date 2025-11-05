@@ -47,11 +47,11 @@ const Portfolio = () => {
       description:
         'Assistant director for Noah Diaz’s lyrical meditation on illness, care, and the stories we tell to keep going. Reviews called SLAC’s staging “smartly, directly, solidly acted” and “thought-provoking,” noting how humor and existential dread coexist in the piece.',
       links: [
-        { href: 'https://www.saltlakeactingcompany.org/shows-ticketing/play-archive/item/1716-you-will-get-sick' },
-        { href: 'https://www.theutahreview.com/noah-diazs-you-will-get-sick-receives-smartly-directly-solidly-acted-regional-premiere-at-salt-lake-acting-company/' },
-        { href: 'https://gephardtdaily.com/local/review-you-will-get-sick-at-slac-will-make-you-ponder-the-meaning-of-life-death/' },
-        { href: 'https://frontrowreviewers.com/?p=22403' },
-        { href: 'https://utahtheatrebloggers.com/913113/slac-provides-a-healthy-dose-of-humanity-with-you-will-get-sick' },
+        { href: 'https://www.saltlakeactingcompany.org/shows-ticketing/play-archive/item/1716-you-will-get-sick', label: 'Salt Lake Acting Company — You Will Get Sick' },
+        { href: 'https://www.theutahreview.com/noah-diazs-you-will-get-sick-receives-smartly-directly-solidly-acted-regional-premiere-at-salt-lake-acting-company/', label: 'Noah Diaz’s You Will Get Sick receives smartly directly, solidly acted regional premiere at SLAC' },
+        { href: 'https://gephardtdaily.com/local/review-you-will-get-sick-at-slac-will-make-you-ponder-the-meaning-of-life-death/', label: 'Review: “You Will Get Sick” at SLAC will make you ponder the meaning of life, death' },
+        { href: 'https://frontrowreviewers.com/?p=22403', label: 'Salt Lake Acting Company’s You Will Get Sick weaves a thought‑provoking modern tale' },
+        { href: 'https://utahtheatrebloggers.com/913113/slac-provides-a-healthy-dose-of-humanity-with-you-will-get-sick', label: 'SLAC Provides a Healthy Dose of Humanity with YOU WILL GET SICK' },
       ],
     },
     {
@@ -63,7 +63,7 @@ const Portfolio = () => {
       description:
         'Steve Yockey’s surreal, darkly comic mosaic about belief and the monsters we wake. Originated multiple characters in a four-actor ensemble; the production continued SLAC’s emphasis on new-play development through readings and labs.',
       links: [
-        { href: 'https://www.saltlakeactingcompany.org/2022-2023/item/1632-sleeping-giant' },
+        { href: 'https://www.saltlakeactingcompany.org/2022-2023/item/1632-sleeping-giant', label: 'Salt Lake Acting Company — Sleeping Giant' },
       ],
     },
     {
@@ -75,12 +75,12 @@ const Portfolio = () => {
       description:
         'Two-hander by Will Snider about an American engineer and her Kenyan colleague whose friendship buckles under class, politics, and power. Opened SLAC’s 49th season; reviews praised taut pacing and emotionally precise performances.',
       links: [
-        { href: 'https://www.saltlakeactingcompany.org/shows-ticketing/play-archive/item/1467-death-of-a-driver' },
-        { href: 'https://slco.org/zap/blog/salt-lake-acting-company-and-death-of-a-driver/' },
-        { href: 'https://www.theutahreview.com/salt-lake-acting-company-opens-49th-season-with-riveting-utah-premiere-of-death-of-a-driver/' },
-        { href: 'https://frontrowreviewersutah.com/?p=13521' },
-        { href: 'https://dailyutahchronicle.com/2019/09/14/slacs-death-of-a-driver-confronts-the-rollercoaster-of-friendship/' },
-        { href: 'https://www.abc4.com/gtu/sitting-down-with-the-actors-from-death-of-a-driver/' },
+        { href: 'https://www.saltlakeactingcompany.org/shows-ticketing/play-archive/item/1467-death-of-a-driver', label: 'Salt Lake Acting Company — Death of a Driver' },
+        { href: 'https://slco.org/zap/blog/salt-lake-acting-company-and-death-of-a-driver/', label: 'Salt Lake County ZAP — Salt Lake Acting Company and Death of a Driver' },
+        { href: 'https://www.theutahreview.com/salt-lake-acting-company-opens-49th-season-with-riveting-utah-premiere-of-death-of-a-driver/', label: 'SLAC opens 49th season with riveting Utah premiere of Death of a Driver' },
+        { href: 'https://frontrowreviewersutah.com/?p=13521', label: 'Front Row Reviewers — Death of a Driver' },
+        { href: 'https://dailyutahchronicle.com/2019/09/14/slacs-death-of-a-driver-confronts-the-rollercoaster-of-friendship/', label: 'SLAC’s “Death of a Driver” Confronts the Rollercoaster of Friendship' },
+        { href: 'https://www.abc4.com/gtu/sitting-down-with-the-actors-from-death-of-a-driver/', label: 'ABC4 — Sitting down with the actors from Death of a Driver' },
       ],
     },
     {
@@ -92,9 +92,9 @@ const Portfolio = () => {
       description:
         'Played Karla in Halley Feiffer’s brash, big-hearted comedy about two adult children colliding beside their hospitalized mothers. SLAC’s archive compiles reviews and production details; simultaneous Tribune coverage spotlighted SLAC’s adoption of intimacy direction practices to keep artists safe during vulnerable scenes.',
       links: [
-        { href: 'https://www.saltlakeactingcompany.org/shows-ticketing/play-archive/item/1389-a-funny-thing-happened-on-the-way-to-the-gynecologic-oncology-unit-at-memorial-sloan-kettering-cancer-center-of-new-york-city' },
-        { href: 'https://www.sltrib.com/artsliving/2018/09/30/help-actors-feel-safe/' },
-        { href: 'https://www.cityweekly.net/BuzzBlog/archives/2018/09/20/theater-review-salt-lake-acting-companys-a-funny-thing-happened' },
+        { href: 'https://www.saltlakeactingcompany.org/shows-ticketing/play-archive/item/1389-a-funny-thing-happened-on-the-way-to-the-gynecologic-oncology-unit-at-memorial-sloan-kettering-cancer-center-of-new-york-city', label: 'Salt Lake Acting Company — A Funny Thing Happened on the Way…' },
+        { href: 'https://www.sltrib.com/artsliving/2018/09/30/help-actors-feel-safe/', label: 'To help actors feel safe during sex scenes, SLAC tries “intimacy directing”' },
+        { href: 'https://www.cityweekly.net/BuzzBlog/archives/2018/09/20/theater-review-salt-lake-acting-companys-a-funny-thing-happened', label: 'CityWeekly — Theater review: SLAC’s A Funny Thing Happened…' },
       ],
     },
     {
@@ -106,13 +106,13 @@ const Portfolio = () => {
       description:
         'World premiere of Kathleen Cahill’s triptych about women in the military and the aftermath of war. Originated Alyson Moss; production developed through SLAC’s new-play pipeline and supported by an Edgerton Foundation New Play Award. Press called the staging “powerful,” highlighting stories drawn from Iraq/Afghanistan service members and MST (military sexual trauma).',
       links: [
-        { href: 'https://www.saltlakeactingcompany.org/2017/item/1155-harbur-gate' },
-        { href: 'http://www.sltrib.com/home/4885212-155/in-salt-lake-world-premiere-kathleen' },
-        { href: 'https://saltlakemagazine.com/preview-harbur-gate-slac/' },
-        { href: 'http://www.cityweekly.net/TheDailyFeed/archives/2017/02/08/salt-lake-acting-company-harbur-gate' },
-        { href: 'https://saltlakemagazine.com/review-harbur-gate/' },
-        { href: 'http://www.sltrib.com/entertainment/4942712-155/powerful-salt-lake-production-of-harbur' },
-        { href: 'http://dailyutahchronicle.com/2017/02/14/slacs-harbur-gate-heroes-fighting-hope-review/' },
+        { href: 'https://www.saltlakeactingcompany.org/2017/item/1155-harbur-gate', label: 'Salt Lake Acting Company — Harbur Gate' },
+        { href: 'http://www.sltrib.com/home/4885212-155/in-salt-lake-world-premiere-kathleen', label: 'The Salt Lake Tribune — In Salt Lake, world premiere…' },
+        { href: 'https://saltlakemagazine.com/preview-harbur-gate-slac/', label: 'Salt Lake Magazine — Preview: Harbur Gate @ SLAC' },
+        { href: 'http://www.cityweekly.net/TheDailyFeed/archives/2017/02/08/salt-lake-acting-company-harbur-gate', label: 'CityWeekly — Harbur Gate' },
+        { href: 'https://saltlakemagazine.com/review-harbur-gate/', label: 'Salt Lake Magazine — Review: Harbur Gate' },
+        { href: 'http://www.sltrib.com/entertainment/4942712-155/powerful-salt-lake-production-of-harbur', label: 'The Salt Lake Tribune — Powerful Salt Lake production of Harbur Gate' },
+        { href: 'http://dailyutahchronicle.com/2017/02/14/slacs-harbur-gate-heroes-fighting-hope-review/', label: 'The Daily Utah Chronicle — “Harbur Gate”: Heroes Fighting for Hope (Review)' },
       ],
     },
     {
@@ -124,11 +124,11 @@ const Portfolio = () => {
       description:
         'Originated Tanya in Troy Deutsch’s two-hander dark comedy about small-town longing, myth, and menace. The run opened SLAC’s season; coverage framed it as “Shark Week(s) at SLAC),” noting the show’s blend of physical comedy and emotional volatility.',
       links: [
-        { href: 'https://www.saltlakeactingcompany.org/2017/item/1152-bull-shark-attack' },
-        { href: 'https://saltlakemagazine.com/shark-weeks-slac/' },
-        { href: 'http://www.cityweekly.net/TheDailyFeed/archives/2016/09/07/salt-lake-acting-company-bull-shark-attack' },
-        { href: 'http://www.sltrib.com/entertainment/4295199-155/salt-lake-acting-company-world-premiere' },
-        { href: 'http://www.cityweekly.net/utah/the-essential-aande-picks-for-sept-22-28/Content?oid=3467735' },
+        { href: 'https://www.saltlakeactingcompany.org/2017/item/1152-bull-shark-attack', label: 'Salt Lake Acting Company — Bull Shark Attack' },
+        { href: 'https://saltlakemagazine.com/shark-weeks-slac/', label: 'Shark Week(s) at SLAC — Salt Lake Magazine' },
+        { href: 'http://www.cityweekly.net/TheDailyFeed/archives/2016/09/07/salt-lake-acting-company-bull-shark-attack', label: 'CityWeekly — Bull Shark Attack' },
+        { href: 'http://www.sltrib.com/entertainment/4295199-155/salt-lake-acting-company-world-premiere', label: 'The Salt Lake Tribune — World premiere at SLAC' },
+        { href: 'http://www.cityweekly.net/utah/the-essential-aande-picks-for-sept-22-28/Content?oid=3467735', label: 'CityWeekly — The Essential A&E Picks for Sept. 22–28' },
       ],
     },
   ];
@@ -212,6 +212,7 @@ const Portfolio = () => {
                       } catch (e) {
                         host = url;
                       }
+                      const label = l.label || host;
                       return (
                         <a
                           key={idx}
@@ -220,7 +221,7 @@ const Portfolio = () => {
                           rel="noopener noreferrer"
                           className="inline-flex items-center gap-2 px-3 py-1 rounded bg-white text-primary border border-background-dark text-sm hover:bg-background-dark/60 transition"
                         >
-                          <span className="font-medium">{host}</span>
+                          <span className="font-medium">{label}</span>
                         </a>
                       );
                     })}
