@@ -4,111 +4,111 @@ import { useState } from 'react';
 
 const Portfolio = () => {
   const imageMap = {
-    '"Harbur Gate" - Edgerton Award Winner': [
+    'Harbur Gate (World Premiere, 2017) — Alyson Moss': [
       '/images/harburgate1cropped.jpg',
       '/images/harburgate2cropped.jpg',
       '/images/harburgate3cropped.jpg',
     ],
-    '"Sleeping Giant" - World Premiere (2022)': [
-      '/images/sleepinggiant1cropped.jpg',
-      '/images/sleepinggiant2cropped.jpg',
-      '/images/sleepinggiant3cropped.jpg',
+    'Bull Shark Attack (World Premiere, 2016) — Tanya': [
+      '/images/bullshark1.jpg',
+      '/images/bullshark2.jpg',
+      '/images/bullshark3.JPG',
+      '/images/slac_bullsharkattack_090416~4.jpg',
     ],
-    '"Death of a Driver" - Lead Role': [
+    'A Funny Thing Happened on the Way to the Gynecologic Oncology Unit at Memorial Sloan Kettering Cancer Center of New York City (Utah Premiere, 2018) — Karla': [
+      '/images/funnything4cropped.jpg',
+      '/images/funnything5cropped.jpg',
+      '/images/funnything9cropped.jpg',
+      '/images/funnything10.JPG',
+    ],
+    'Death of a Driver (Utah Premiere, 2019) — Sarah': [
       '/images/deathofadriver3cropped.jpg',
       '/images/deathofadriver5cropped.jpg',
       '/images/deathofadriver8cropped.jpg',
     ],
-    "SLAC New Play Sounding Series": [
-      '/images/playwrightslab1.JPG',
-      '/images/playwrightslab2.JPG',
-    ],
-    "SLAC Playwrights' Lab Leadership": [
-      '/images/playwrightslab1.JPG',
-      '/images/playwrightslab2.JPG',
-    ],
-    '"The Good Body" - Pygmalion Theatre Company': [
-      '/images/goodbody1.JPG',
-      '/images/goodbody2.JPG',
-      '/images/goodbody3.JPG',
-    ],
-    '"Cheat" - Pygmalion Theatre Company': [
-      '/images/cheat1.jpg',
-      '/images/cheat2.JPG',
+    'Sleeping Giant (World Premiere, 2022) — Ensemble/Multiple roles': [
+      '/images/sleepinggiant1cropped.jpg',
+      '/images/sleepinggiant2cropped.jpg',
+      '/images/sleepinggiant3cropped.jpg',
     ],
   };
   const portfolioItems = [
     {
       id: 1,
-      title: '"Harbur Gate" - Edgerton Award Winner',
-      category: 'Award-Winning Production',
+      title: 'Harbur Gate (World Premiere, 2017) — Alyson Moss',
+      category: 'World Premiere',
       location: 'Salt Lake City, UT',
       description:
-        'World premiere by Kathleen Cahill that won the prestigious Edgerton Foundation New Play Award. Commissioned by National New Play Network. Critically acclaimed: "Stokes-Wylie really digs in here and turns Cahill\'s words into an intense jousting match that enlightens and provokes" - Salt Lake Magazine.',
-      image: null,
+        'World premiere of Kathleen Cahill’s triptych about women in the military and the aftermath of war. Originated Alyson Moss; production developed through SLAC’s new-play pipeline and supported by an Edgerton Foundation New Play Award. Press called the staging “powerful,” highlighting stories drawn from Iraq/Afghanistan service members and MST (military sexual trauma).',
+      links: [
+        { label: 'The Daily Utah Chronicle', count: 4 },
+        { label: 'saltlakeactingcompany.org', count: 4 },
+        { label: 'The Salt Lake Tribune', count: 4 },
+      ],
     },
     {
       id: 2,
-      title: '"Sleeping Giant" - World Premiere (2022)',
-      category: 'New Play Development',
+      title: 'Bull Shark Attack (World Premiere, 2016) — Tanya',
+      category: 'World Premiere',
       location: 'Salt Lake City, UT',
       description:
-        'World premiere by Steve Yockey (creator of HBO\'s "The Flight Attendant"). Participated in developmental reading (May 2022) then originated role in full production (Sept-Oct 2022). Gephardt Daily praised the cast\'s ability to "seamlessly slide into the surreal" with "beautiful" multi-character performances.',
-      image: null,
+        'Originated Tanya in Troy Deutsch’s two-hander dark comedy about small-town longing, myth, and menace. The run opened SLAC’s season; coverage framed it as “Shark Week(s) at SLAC),” noting the show’s blend of physical comedy and emotional volatility.',
+      links: [
+        { label: 'saltlakeactingcompany.org', count: 2 },
+        { label: 'The Salt Lake Tribune', count: 2 },
+      ],
     },
     {
       id: 3,
-      title: '"Death of a Driver" - Lead Role',
-      category: 'Production Highlight',
+      title: 'A Funny Thing Happened on the Way to the Gynecologic Oncology Unit at Memorial Sloan Kettering Cancer Center of New York City (Utah Premiere, 2018) — Karla',
+      category: 'Utah Premiere',
       location: 'Salt Lake City, UT',
       description:
-        'Lead role as Sarah in this political thriller by Will Snider, following its Off-Broadway world premiere at Urban Stages NYC. Two-person show exploring American-African relationships, developed through SLAC\'s 2018 Playwrights\' Lab.',
-      image: null,
+        'Played Karla in Halley Feiffer’s brash, big-hearted comedy about two adult children colliding beside their hospitalized mothers. SLAC’s archive compiles reviews and production details; simultaneous Tribune coverage spotlighted SLAC’s adoption of intimacy direction practices to keep artists safe during vulnerable scenes.',
+      links: [{ label: 'saltlakeactingcompany.org', count: 1 }],
     },
     {
       id: 4,
-      title: 'SLAC New Play Sounding Series',
-      category: 'New Play Development',
+      title: 'Death of a Driver (Utah Premiere, 2019) — Sarah',
+      category: 'Utah Premiere',
       location: 'Salt Lake City, UT',
       description:
-        'Extensive participation in staged readings of developing scripts, working directly with playwrights to shape new works before production. Key part of SLAC\'s commitment to developing original theatre.',
-      image: null,
+        'Two-hander by Will Snider about an American engineer and her Kenyan colleague whose friendship buckles under class, politics, and power. Opened SLAC’s 49th season; reviews praised taut pacing and emotionally precise performances.',
+      links: [
+        { label: 'saltlakeactingcompany.org', count: 2 },
+        { label: 'The Utah Review', count: 2 },
+      ],
     },
     {
       id: 5,
-      title: 'SLAC Playwrights\' Lab Leadership',
-      category: 'Literary Management',
+      title: 'Sleeping Giant (World Premiere, 2022) — Ensemble/Multiple roles',
+      category: 'World Premiere',
       location: 'Salt Lake City, UT',
       description:
-        'Worked with directors Kareem Fahmy, Tamilla Woodard, and dramaturg Alexandra Harbold in writer-focused laboratory settings, helping develop new plays from conception through production. Championed emerging voices and original works.',
-      image: null,
+        'Steve Yockey’s surreal, darkly comic mosaic about belief and the monsters we wake. Originated multiple characters in a four-actor ensemble; the production continued SLAC’s emphasis on new-play development through readings and labs.',
+      links: [{ label: 'saltlakeactingcompany.org', count: 0 }],
     },
     {
       id: 6,
-      title: 'Digital Shorts - Director',
-      category: 'Directing',
+      title: 'Yoga Play (Utah Premiere, 2023) — Assistant Director',
+      category: 'Assistant Director',
       location: 'Salt Lake City, UT',
       description:
-        'Created and directed two short films for SLAC\'s Digital Shorts program: "Bleep" and "Dial-A-Laugh." Expanded artistic range beyond performance and literary management into directing and digital content.',
-      image: null,
+        'Assistant director on Dipika Guha’s sharp satire of the wellness apparel industry, identity, and the commodification of “enlightenment.” SLAC’s season page credits the AD role and outlines the creative team and production run.',
+      links: [{ label: 'saltlakeactingcompany.org', count: 0 }],
     },
     {
       id: 7,
-      title: '"The Good Body" - Pygmalion Theatre Company',
-      category: 'Production Highlight',
+      title: 'You Will Get Sick (Regional Premiere, 2024) — Assistant Director',
+      category: 'Assistant Director',
       location: 'Salt Lake City, UT',
       description:
-        'Eve Ensler\'s The Good Body at Pygmalion Theatre Company. Production photos and materials showcasing performance and staging.',
-      image: null,
-    },
-    {
-      id: 8,
-      title: '"Cheat" - Pygmalion Theatre Company',
-      category: 'Production Highlight',
-      location: 'Salt Lake City, UT',
-      description:
-        'Pygmalion Theatre Company production of Cheat. Gallery of production stills and promotional images.',
-      image: null,
+        'Assistant director for Noah Diaz’s lyrical meditation on illness, care, and the stories we tell to keep going. Reviews called SLAC’s staging “smartly, directly, solidly acted” and “thought-provoking,” noting how humor and existential dread coexist in the piece.',
+      links: [
+        { label: 'Utah Theatre Bloggers', count: 3 },
+        { label: 'saltlakeactingcompany.org', count: 3 },
+        { label: 'The Utah Review', count: 3 },
+      ],
     },
   ];
 
@@ -177,7 +177,22 @@ const Portfolio = () => {
                 {item.location && (
                   <div className="mb-2"><LocationTag text={item.location} /></div>
                 )}
-                <p className="text-text-light leading-relaxed">{item.description}</p>
+                <p className="text-text-light leading-relaxed mb-3">{item.description}</p>
+                {item.links && item.links.length > 0 && (
+                  <div className="flex flex-wrap gap-2">
+                    {item.links.map((l, idx) => (
+                      <span
+                        key={idx}
+                        className="inline-flex items-center gap-2 px-3 py-1 rounded bg-white text-primary border border-background-dark text-sm"
+                      >
+                        <span className="font-medium">{l.label}</span>
+                        {typeof l.count === 'number' && l.count > 0 && (
+                          <span className="text-xs text-text-light">+{l.count}</span>
+                        )}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           ))}

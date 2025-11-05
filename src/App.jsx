@@ -18,8 +18,8 @@ function App() {
       <About />
       <ArtistStatement />
       <Experience />
-      <Performance />
       <Portfolio />
+      <Performance />
       <CriticalAcclaim />
       <Skills />
       <Contact />
