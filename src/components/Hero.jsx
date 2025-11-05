@@ -70,11 +70,17 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-end justify-start overflow-hidden p-4 md:p-8 lg:p-12 pb-24">
+      {/* Fallback background to avoid gray flash while first image loads */}
+      <div
+        className="absolute inset-0 bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/sleepinggiant1cropped.jpg')", backgroundSize: 'contain' }}
+      />
+
       {/* Rotating Background Images with portrait-aware fit (pillarbox) */}
       <AutoCarousel
         images={heroImages}
         interval={5000}
-        className="absolute inset-0 bg-black"
+        className="absolute inset-0"
         fit="auto"
         imgClassName=""
       />
