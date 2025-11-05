@@ -5,32 +5,32 @@ import { useState } from 'react';
 
 const Portfolio = () => {
   const imageMap = {
-    'You Will Get Sick — by Noah Diaz': [
+    'You Will Get Sick by Noah Diaz': [
       '/images/youwillgetsick1.jpg',
       '/images/youwillgetsick2.jpg',
     ],
-    '"The Convert" — Sleeping Giant — by Steve Yockey': [
+    '"The Convert" — Sleeping Giant by Steve Yockey': [
       '/images/sleepinggiant1cropped.jpg',
       '/images/sleepinggiant2cropped.jpg',
       '/images/sleepinggiant3cropped.jpg',
     ],
-    '"Sarah" — Death of a Driver — by Will Snider': [
+    '"Sarah" — Death of a Driver by Will Snider': [
       '/images/deathofadriver3cropped.jpg',
       '/images/deathofadriver5cropped.jpg',
       '/images/deathofadriver8cropped.jpg',
     ],
-    '"Karla" — A Funny Thing Happened on the Way to the Gynecologic Oncology Unit at Memorial Sloan Kettering Cancer Center of New York City — by Halley Feiffer': [
+    '"Karla" — A Funny Thing Happened on the Way to the Gynecologic Oncology Unit at Memorial Sloan Kettering Cancer Center of New York City by Halley Feiffer': [
       '/images/funnything4cropped.jpg',
       '/images/funnything5cropped.jpg',
       '/images/funnything9cropped.jpg',
       '/images/funnything10.JPG',
     ],
-    '"Alyson Moss" — Harbur Gate — by Kathleen Cahill': [
+    '"Alyson Moss" — Harbur Gate by Kathleen Cahill': [
       '/images/harburgate1cropped.jpg',
       '/images/harburgate2cropped.jpg',
       '/images/harburgate3cropped.jpg',
     ],
-    '"Tanya" — Bull Shark Attack — by Troy Deutsch': [
+    '"Tanya" — Bull Shark Attack by Troy Deutsch': [
       '/images/bullshark1.jpg',
       '/images/bullshark2.jpg',
       '/images/bullshark3.JPG',
@@ -40,7 +40,7 @@ const Portfolio = () => {
   const portfolioItems = [
     {
       id: 1,
-      title: 'You Will Get Sick — by Noah Diaz',
+      title: 'You Will Get Sick by Noah Diaz',
       category: 'Assistant Director',
       location: 'Salt Lake City, UT',
       year: '2024',
@@ -56,7 +56,7 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: '"The Convert" — Sleeping Giant — by Steve Yockey',
+      title: '"The Convert" — Sleeping Giant by Steve Yockey',
       category: 'World Premiere',
       location: 'Salt Lake City, UT',
       year: '2022',
@@ -68,7 +68,7 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: '"Sarah" — Death of a Driver — by Will Snider',
+      title: '"Sarah" — Death of a Driver by Will Snider',
       category: 'Utah Premiere',
       location: 'Salt Lake City, UT',
       year: '2019',
@@ -85,7 +85,7 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      title: '"Karla" — A Funny Thing Happened on the Way to the Gynecologic Oncology Unit at Memorial Sloan Kettering Cancer Center of New York City — by Halley Feiffer',
+      title: '"Karla" — A Funny Thing Happened on the Way to the Gynecologic Oncology Unit at Memorial Sloan Kettering Cancer Center of New York City by Halley Feiffer',
       category: 'Utah Premiere',
       location: 'Salt Lake City, UT',
       year: '2018',
@@ -99,7 +99,7 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      title: '"Alyson Moss" — Harbur Gate — by Kathleen Cahill',
+      title: '"Alyson Moss" — Harbur Gate by Kathleen Cahill',
       category: 'World Premiere',
       location: 'Salt Lake City, UT',
       year: '2017',
@@ -117,7 +117,7 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      title: '"Tanya" — Bull Shark Attack — by Troy Deutsch',
+      title: '"Tanya" — Bull Shark Attack by Troy Deutsch',
       category: 'World Premiere',
       location: 'Salt Lake City, UT',
       year: '2016',
