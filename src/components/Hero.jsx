@@ -1,9 +1,7 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useMemo } from 'react';
 import AutoCarousel from './AutoCarousel';
 
 const Hero = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
   // Use every image from public/images (mirrors "csw images" folder)
   const baseImages = [
     '/images/at_oct13_pygmalion1.jpg',
@@ -90,14 +88,6 @@ const Hero = () => {
     return [preferredFirst, ...rest];
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
-    }, 5000); // Change image every 5 seconds
-
-    return () => clearInterval(interval);
-  }, [heroImages.length]);
-
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -107,20 +97,16 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-end justify-start overflow-hidden p-4 md:p-8 lg:p-12 pb-24">
-      {/* Fallback background to avoid gray flash while first image loads */}
-      <div
-        className="absolute inset-0 bg-center bg-no-repeat z-0"
-        style={{ backgroundImage: "url('/images/sleepinggiant1cropped.jpg')", backgroundSize: 'contain' }}
-      />
-
       {/* Rotating Background Images with portrait-aware fit (pillarbox) */}
-      <AutoCarousel
-        images={heroImages}
-        interval={5000}
-        className="absolute inset-0 z-0"
-        fit="auto"
-        imgClassName=""
-      />
+      <div className="absolute inset-0 z-0">
+        <AutoCarousel
+          images={heroImages}
+          interval={5000}
+          className="w-full h-full"
+          fit="auto"
+          imgClassName=""
+        />
+      </div>
 
       {/* Dark Overlay for Text Readability */}
       <div className="absolute inset-0 bg-black/30 z-10"></div>
