@@ -89,6 +89,7 @@ const Performance = () => {
       year: '2022',
       location: 'Salt Lake City, UT',
       description: 'World premiere by Steve Yockey (creator of HBO\'s "The Flight Attendant"). Played four distinct characters within a single role. Participated in developmental reading (May 2022) before originating the role in full production (Sept-Oct 2022). Critics praised the cast\'s ability to "seamlessly slide into the surreal... beautifully." Co-directed by Emilio Casillas and Shawn Francis Saunders.',
+      reviewLink: 'https://gephardtdaily.com/local/review-sleeping-giant-at-salt-lake-acting-company-will-haunt-your-dreams/',
     },
     {
       id: 2,
@@ -107,6 +108,7 @@ const Performance = () => {
       year: '2018',
       location: 'Salt Lake City, UT',
       description: 'Contemporary comedy-drama by Halley Feiffer exploring serious illness with humor and heart.',
+      reviewLink: 'https://utahtheatrebloggers.com/27948/gynecologic-oncology-unit-is-both-touching-and-funny',
     },
     {
       id: 4,
@@ -116,6 +118,10 @@ const Performance = () => {
       year: '2017',
       location: 'Salt Lake City, UT',
       description: 'World premiere by Kathleen Cahill that won the Edgerton Foundation New Play Award. Two-person convoy truck drama exploring women in the military. Salt Lake Magazine: "Stokes-Wylie really digs in here and turns Cahill\'s words into an intense jousting match that enlightens and provokes." Salt Lake Tribune praised the "seamless transition between prickly animosity and compassionate moments." Directed by Tamilla Woodard.',
+      reviewLinks: [
+        'https://www.saltlakeactingcompany.org/about/latest-news/item/1230-salt-lake-magazine-harbur-gate-review',
+        'https://www.saltlakeactingcompany.org/about/latest-news/item/1233-salt-lake-tribune-review-of-harbur-gate'
+      ],
     },
     {
       id: 5,
@@ -125,6 +131,7 @@ const Performance = () => {
       year: '2017',
       location: 'Salt Lake City, UT',
       description: 'Utah\'s beloved annual satirical musical revue. Performed multiple characters in this long-running political satire and comedy. Directed by Cynthia Fleming.',
+      reviewLink: 'https://www.saltlakeactingcompany.org/about/latest-news/item/1260-utah-theater-bloggers-review-saturday-s-voyeur-2017',
     },
     {
       id: 6,
@@ -134,6 +141,7 @@ const Performance = () => {
       year: '2016',
       location: 'Salt Lake City, UT',
       description: 'Dark comedy by Troy Deutsch. Two-person show requiring physical comedy and dramatic range. Directed by Sandra Shotwell.',
+      reviewLink: 'https://www.cityweekly.net/BuzzBlog/archives/2016/09/07/salt-lake-acting-company-bull-shark-attack',
     },
     {
       id: 7,
@@ -143,13 +151,14 @@ const Performance = () => {
       year: '2015',
       location: 'New York City, NY',
       description: 'New York City production showcasing versatility in multiple roles. Directed by Ashley Monroe and Courtney Ulrich.',
+      reviewLink: 'http://www.theasy.com/Reviews/2015/I/inatiltedplace.php',
     },
     {
       id: 8,
       title: 'The Crucible',
       role: 'Elizabeth Proctor',
       company: 'The Grand Theatre',
-      year: '',
+      year: '2012',
       location: 'Salt Lake City, UT',
       description: 'Arthur Miller\'s classic drama. Portrayed the morally resolute Elizabeth Proctor in this powerful examination of truth, integrity, and persecution. A demanding dramatic role requiring emotional depth and restraint. Directed by Mark Fossen.',
     },
@@ -158,72 +167,88 @@ const Performance = () => {
       title: 'In the Next Room (or the vibrator play)',
       role: 'Mrs. Givings',
       company: 'Pygmalion Theatre Company',
-      year: '',
+      year: '2012',
       location: 'Salt Lake City, UT',
       description: 'Sarah Ruhl\'s Tony-nominated comedy. Lead role as Mrs. Givings exploring Victorian attitudes toward intimacy with wit and poignancy. Directed by Fran Pruyn.',
+      reviewLink: 'https://utahtheatrebloggers.com/11072/in-the-next-room-or-the-vibrator-play-is-electric',
     },
     {
       id: 10,
       title: 'Burn This',
       role: 'Anna (Lead)',
       company: 'Utah Theatre Artists Co.',
-      year: '',
+      year: '2010',
       location: 'Salt Lake City, UT',
       description: 'Lanford Wilson\'s passionate drama. Lead role as Anna, a choreographer navigating grief and unexpected attraction. A complex, emotionally demanding performance. Directed by Lane Richins.',
+      reviewLink: 'https://utahtheatrebloggers.com/1641/burn-this-is-a-strong-production-from-the-utac',
     },
     {
       id: 11,
       title: 'The Turn of the Screw',
       role: 'Governess (Lead)',
       company: 'Utah Theater Artists Co.',
-      year: '',
+      year: '2009',
       location: 'Salt Lake City, UT',
       description: 'Gothic psychological thriller adapted from Henry James. Lead role as the Governess in this haunting tale of ambiguity and terror. Directed by Lane Richins.',
+      reviewLink: 'https://www.deseret.com/2009/9/28/20342872/ghostly-turn-of-the-screw-offers-great-acting/',
     },
     {
       id: 12,
       title: 'The Fairy Queen with A Midsummer Night\'s Dream',
       role: 'Helena',
-      company: 'dell\'Arte Opera Ensemble & Classic Stage Company, NYC',
-      year: '',
+      company: 'dell\'Arte Opera Ensemble, East 13th Street Theatre, New York City',
+      year: '2014',
       location: 'New York City, NY',
       description: 'Purcell\'s baroque opera paired with Shakespeare at Classic Stage Company. Performed Helena, showcasing vocal and acting abilities in this fusion of opera and classical theatre. Directed by Christopher Caines.',
+      reviewLink: 'https://seenandheard-international.com/2014/08/the-fairy-queen-a-production-evoking-the-spirit-of-purcell/',
     },
     {
       id: 13,
       title: 'Pride and Prejudice',
       role: 'Ensemble, u/s Elizabeth Bennett & Caroline Bingley (performed)',
       company: 'Milwaukee Repertory Theater',
-      year: '',
+      year: '2009',
       location: 'Milwaukee, WI',
       description: 'Major regional theatre production. Understudied and performed the lead role of Elizabeth Bennett and Caroline Bingley, demonstrating range and reliability. Directed by JR Sullivan.',
     },
     {
       id: 14,
       title: 'The Cherry Orchard',
-      role: 'Ensemble, u/s Lyubov Ranyevskaya',
+      role: 'Ensemble, u/s Lyubov Ranyevskaya (performed)',
       company: 'Milwaukee Repertory Theater',
-      year: '',
+      year: '2009',
       location: 'Milwaukee, WI',
       description: 'Chekhov\'s masterwork at one of America\'s leading regional theatres. Understudied the lead role of Lyubov Ranyevskaya. Directed by Ben Barnes.',
+      reviewLink: 'https://www.milwaukeemag.com/Review_TheCherryOrchard/',
     },
     {
       id: 15,
       title: 'The Good Body',
       role: 'Actor',
       company: 'Pygmalion Theatre Company',
-      year: '',
+      year: '2011',
       location: 'Salt Lake City, UT',
       description: 'Production of Eve Ensler\'s The Good Body at Pygmalion Theatre Company.',
+      reviewLink: 'https://www.cityweekly.net/ae/review-pygmalion-theatre-companys-the-good-body-2155142',
     },
     {
       id: 16,
       title: 'Cheat',
-      role: 'Actor',
+      role: 'Roxy',
       company: 'Pygmalion Theatre Company',
-      year: '',
+      year: '2013',
       location: 'Salt Lake City, UT',
       description: 'Production at Pygmalion Theatre Company.',
+      reviewLink: 'https://utahtheatrebloggers.com/14841/solid-acting-and-design-anchor-pygmalions-cheat',
+    },
+    {
+      id: 17,
+      title: 'The Blonde, The Brunette and The Vengeful Redhead',
+      role: 'Ensemble, u/s',
+      company: 'Milwaukee Repertory Theater',
+      year: '2008',
+      location: 'Milwaukee, WI',
+      description: 'Production at Milwaukee Repertory Theater.',
     },
   ];
 
@@ -279,6 +304,35 @@ const Performance = () => {
                     )}
                   </div>
                   <p className="text-text leading-relaxed">{performance.description}</p>
+                  {(performance.reviewLink || performance.reviewLinks) && (
+                    <div className="mt-4">
+                      {performance.reviewLink && (
+                        <a
+                          href={performance.reviewLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center text-accent hover:text-accent-dark transition-colors text-sm font-medium"
+                        >
+                          Read Review →
+                        </a>
+                      )}
+                      {performance.reviewLinks && (
+                        <div className="flex flex-wrap gap-3">
+                          {performance.reviewLinks.map((link, index) => (
+                            <a
+                              key={index}
+                              href={link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center text-accent hover:text-accent-dark transition-colors text-sm font-medium"
+                            >
+                              Read Review {index + 1} →
+                            </a>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
