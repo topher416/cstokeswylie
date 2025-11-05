@@ -1,5 +1,4 @@
-import { useMemo } from 'react';
-import AutoCarousel from './AutoCarousel';
+import { useMemo, useEffect, useState } from 'react';
 
 const Hero = () => {
   // Use every image from public/images (mirrors "csw images" folder)
@@ -88,6 +87,22 @@ const Hero = () => {
     return [preferredFirst, ...rest];
   }, []);
 
+  const [index, setIndex] = useState(0);
+  const [orientations, setOrientations] = useState({}); // src -> 'portrait' | 'landscape'
+
+  useEffect(() => {
+    if (!heroImages || heroImages.length <= 1) return undefined;
+    const id = setInterval(() => {
+      setIndex((prev) => (prev + 1) % heroImages.length);
+    }, 4000);
+    return () => clearInterval(id);
+  }, [heroImages]);
+
+  const handleLoad = (src, e) => {
+    const { naturalWidth: w, naturalHeight: h } = e.target;
+    setOrientations((prev) => ({ ...prev, [src]: h >= w ? 'portrait' : 'landscape' }));
+  };
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -98,14 +113,24 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-end justify-start overflow-hidden p-4 md:p-8 lg:p-12 pb-24">
       {/* Rotating Background Images with portrait-aware fit (pillarbox) */}
-      <div className="absolute inset-0 z-0">
-        <AutoCarousel
-          images={heroImages}
-          interval={5000}
-          className="w-full h-full"
-          fit="auto"
-          imgClassName=""
-        />
+      <div className="absolute inset-0 z-0 bg-black">
+        {heroImages.map((src, i) => {
+          const fitClass = orientations[src] === 'portrait' ? 'object-contain' : 'object-cover';
+          return (
+            <img
+              key={src}
+              src={src}
+              alt=""
+              onLoad={(e) => handleLoad(src, e)}
+              className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${fitClass} ${
+                i === index ? 'opacity-100' : 'opacity-0'
+              }`}
+              loading={i === 0 ? 'eager' : 'lazy'}
+              fetchpriority={i === 0 ? 'high' : 'auto'}
+              decoding="async"
+            />
+          );
+        })}
       </div>
 
       {/* Dark Overlay for Text Readability */}
