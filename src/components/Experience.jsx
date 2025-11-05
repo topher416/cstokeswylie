@@ -50,7 +50,7 @@ const Experience = () => {
     {
       id: 4,
       company: 'Salt Lake Acting Company',
-      title: 'Development & Outreach Coordinator / Director of Development',
+      title: 'Director of Development',
       dates: 'October 2011 – June 2013',
       location: 'Salt Lake City, UT',
       highlights: [
