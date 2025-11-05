@@ -7,10 +7,14 @@ const About = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-          {/* Professional Headshot - Placeholder */}
+          {/* Professional Headshot */}
           <div className="order-2 md:order-1">
-            <div className="aspect-square rounded-lg bg-gradient-to-br from-accent/20 to-primary/20 shadow-2xl overflow-hidden flex items-center justify-center">
-              <div className="text-9xl font-serif text-accent/40">CSW</div>
+            <div className="aspect-[3/4] rounded-lg shadow-2xl overflow-hidden">
+              <img
+                src="/images/headshot.jpeg"
+                alt="Cassandra Stokes-Wylie professional headshot"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
