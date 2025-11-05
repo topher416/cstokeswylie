@@ -65,10 +65,7 @@ const Hero = () => {
             Actor | Literary Manager | Theatre Administrator
           </p>
 
-          <p className="text-base md:text-lg text-white/80 max-w-2xl mx-auto mb-10 md:mb-12 leading-relaxed">
-            I find the playwrights others overlook and build the systems that let their work shine—
-            six years championing new voices at Salt Lake Acting Company, from first draft to opening night.
-          </p>
+          {/* Intro paragraph removed per request */}
 
           <div className="flex flex-col sm:flex-row gap-4 justify-start items-start">
             <button
