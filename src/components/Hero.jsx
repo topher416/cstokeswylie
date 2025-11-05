@@ -1,23 +1,56 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Use only images marked as "cropped" from public/images
-  const heroImages = [
+  // Use every image from public/images (mirrors "csw images" folder)
+  const baseImages = [
+    '/images/at_oct13_pygmalion1.jpg',
+    '/images/bullshark1.jpg',
+    '/images/bullshark2.jpg',
+    '/images/cassandra_stokes_wylie_backstage_headshot.jpeg',
+    '/images/crucible1.jpg',
+    '/images/crucible2.jpg',
+    '/images/crucible3.webp',
+    '/images/deathofadriver1.jpg',
+    '/images/deathofadriver2.jpg',
     '/images/deathofadriver3cropped.jpg',
+    '/images/deathofadriver4.jpg',
     '/images/deathofadriver5cropped.jpg',
+    '/images/deathofadriver6.jpg',
+    '/images/deathofadriver7.jpg',
     '/images/deathofadriver8cropped.jpg',
+    '/images/funnything1.jpg',
+    '/images/funnything2.jpg',
+    '/images/funnything3.jpg',
     '/images/funnything4cropped.jpg',
     '/images/funnything5cropped.jpg',
+    '/images/funnything6.jpg',
+    '/images/funnything7.jpg',
+    '/images/funnything8.jpg',
     '/images/funnything9cropped.jpg',
     '/images/harburgate1cropped.jpg',
     '/images/harburgate2cropped.jpg',
     '/images/harburgate3cropped.jpg',
+    '/images/harburgate4.jpg',
+    '/images/saturdays_voyeur_2017_ensemble_dance.jpeg',
+    '/images/slac_bullsharkattack_090416~4.jpg',
     '/images/sleepinggiant1cropped.jpg',
     '/images/sleepinggiant2cropped.jpg',
     '/images/sleepinggiant3cropped.jpg',
+    '/images/tiltedplace2.jpg',
+    '/images/tiltedplace3.jpg',
   ];
+
+  // Shuffle images for a fresh order each load
+  const heroImages = useMemo(() => {
+    const arr = [...baseImages];
+    for (let i = arr.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
