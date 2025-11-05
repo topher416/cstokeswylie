@@ -52,7 +52,7 @@ const Hero = () => {
       ))}
 
       {/* Dark Overlay for Text Readability */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/30"></div>
 
       <div className="relative section-container text-left z-10 max-w-4xl">
         <div>
