@@ -18,6 +18,14 @@ const Portfolio = () => {
       '/images/deathofadriver5cropped.jpg',
       '/images/deathofadriver8cropped.jpg',
     ],
+    "SLAC New Play Sounding Series": [
+      '/images/playwrightslab1.JPG',
+      '/images/playwrightslab2.JPG',
+    ],
+    "SLAC Playwrights' Lab Leadership": [
+      '/images/playwrightslab1.JPG',
+      '/images/playwrightslab2.JPG',
+    ],
   };
   const portfolioItems = [
     {
