@@ -16,6 +16,7 @@ const Performance = () => {
       '/images/funnything4cropped.jpg',
       '/images/funnything5cropped.jpg',
       '/images/funnything9cropped.jpg',
+      '/images/funnything10.JPG',
     ],
     'Harbur Gate': [
       '/images/harburgate1cropped.jpg',
@@ -68,11 +69,14 @@ const Performance = () => {
       '/images/vibratorplay10.JPG',
       '/images/vibratorplay11.JPG',
     ],
-    'A Funny Thing Happened on the Way to the Gynecologic Oncology Unit...': [
-      '/images/funnything4cropped.jpg',
-      '/images/funnything5cropped.jpg',
-      '/images/funnything9cropped.jpg',
-      '/images/funnything10.JPG',
+    'The Good Body': [
+      '/images/goodbody1.JPG',
+      '/images/goodbody2.JPG',
+      '/images/goodbody3.JPG',
+    ],
+    Cheat: [
+      '/images/cheat1.jpg',
+      '/images/cheat2.JPG',
     ],
   };
   const performances = [
@@ -187,6 +191,22 @@ const Performance = () => {
       company: 'Milwaukee Repertory Theater',
       year: '',
       description: 'Chekhov\'s masterwork at one of America\'s leading regional theatres. Understudied the lead role of Lyubov Ranyevskaya. Directed by Ben Barnes.',
+    },
+    {
+      id: 15,
+      title: 'The Good Body',
+      role: 'Actor',
+      company: 'Pygmalion Theatre Company',
+      year: '',
+      description: 'Production of Eve Ensler\'s The Good Body at Pygmalion Theatre Company.',
+    },
+    {
+      id: 16,
+      title: 'Cheat',
+      role: 'Actor',
+      company: 'Pygmalion Theatre Company',
+      year: '',
+      description: 'Production at Pygmalion Theatre Company.',
     },
   ];
 
