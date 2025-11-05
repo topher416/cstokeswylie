@@ -162,9 +162,6 @@ const Performance = () => {
           <span className="inline-block px-4 py-2 bg-accent/10 text-accent-dark rounded-full text-sm font-medium mr-3">
             AEA (Actors' Equity Association)
           </span>
-          <span className="inline-block px-4 py-2 bg-accent/10 text-accent-dark rounded-full text-sm font-medium mr-3">
-            Mezzo Soprano
-          </span>
           <span className="inline-block px-4 py-2 bg-accent/10 text-accent-dark rounded-full text-sm font-medium">
             Stage Combat • Dialects • Singing
           </span>
