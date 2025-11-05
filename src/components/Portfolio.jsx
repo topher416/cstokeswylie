@@ -5,32 +5,32 @@ import { useState } from 'react';
 
 const Portfolio = () => {
   const imageMap = {
-    'You Will Get Sick (Regional Premiere, 2024) — Assistant Director — by Noah Diaz': [
+    'You Will Get Sick — by Noah Diaz, Assistant Director': [
       '/images/youwillgetsick1.jpg',
       '/images/youwillgetsick2.jpg',
     ],
-    'Sleeping Giant (World Premiere, 2022) — Ensemble/Multiple roles — by Steve Yockey': [
+    'Sleeping Giant — by Steve Yockey, Ensemble/Multiple roles': [
       '/images/sleepinggiant1cropped.jpg',
       '/images/sleepinggiant2cropped.jpg',
       '/images/sleepinggiant3cropped.jpg',
     ],
-    'Death of a Driver (Utah Premiere, 2019) — Sarah — by Will Snider': [
+    'Death of a Driver — by Will Snider, Sarah': [
       '/images/deathofadriver3cropped.jpg',
       '/images/deathofadriver5cropped.jpg',
       '/images/deathofadriver8cropped.jpg',
     ],
-    'A Funny Thing Happened on the Way to the Gynecologic Oncology Unit at Memorial Sloan Kettering Cancer Center of New York City (Utah Premiere, 2018) — Karla — by Halley Feiffer': [
+    'A Funny Thing Happened on the Way to the Gynecologic Oncology Unit at Memorial Sloan Kettering Cancer Center of New York City — by Halley Feiffer, Karla': [
       '/images/funnything4cropped.jpg',
       '/images/funnything5cropped.jpg',
       '/images/funnything9cropped.jpg',
       '/images/funnything10.JPG',
     ],
-    'Harbur Gate (World Premiere, 2017) — Alyson Moss — by Kathleen Cahill': [
+    'Harbur Gate — by Kathleen Cahill, Alyson Moss': [
       '/images/harburgate1cropped.jpg',
       '/images/harburgate2cropped.jpg',
       '/images/harburgate3cropped.jpg',
     ],
-    'Bull Shark Attack (World Premiere, 2016) — Tanya — by Troy Deutsch': [
+    'Bull Shark Attack — by Troy Deutsch, Tanya': [
       '/images/bullshark1.jpg',
       '/images/bullshark2.jpg',
       '/images/bullshark3.JPG',
@@ -40,7 +40,7 @@ const Portfolio = () => {
   const portfolioItems = [
     {
       id: 1,
-      title: 'You Will Get Sick (Regional Premiere, 2024) — Assistant Director — by Noah Diaz',
+      title: 'You Will Get Sick — by Noah Diaz, Assistant Director',
       category: 'Assistant Director',
       location: 'Salt Lake City, UT',
       year: '2024',
@@ -56,7 +56,7 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: 'Sleeping Giant (World Premiere, 2022) — Ensemble/Multiple roles — by Steve Yockey',
+      title: 'Sleeping Giant — by Steve Yockey, Ensemble/Multiple roles',
       category: 'World Premiere',
       location: 'Salt Lake City, UT',
       year: '2022',
@@ -68,7 +68,7 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: 'Death of a Driver (Utah Premiere, 2019) — Sarah — by Will Snider',
+      title: 'Death of a Driver — by Will Snider, Sarah',
       category: 'Utah Premiere',
       location: 'Salt Lake City, UT',
       year: '2019',
@@ -85,7 +85,7 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      title: 'A Funny Thing Happened on the Way to the Gynecologic Oncology Unit at Memorial Sloan Kettering Cancer Center of New York City (Utah Premiere, 2018) — Karla — by Halley Feiffer',
+      title: 'A Funny Thing Happened on the Way to the Gynecologic Oncology Unit at Memorial Sloan Kettering Cancer Center of New York City — by Halley Feiffer, Karla',
       category: 'Utah Premiere',
       location: 'Salt Lake City, UT',
       year: '2018',
@@ -99,7 +99,7 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      title: 'Harbur Gate (World Premiere, 2017) — Alyson Moss — by Kathleen Cahill',
+      title: 'Harbur Gate — by Kathleen Cahill, Alyson Moss',
       category: 'World Premiere',
       location: 'Salt Lake City, UT',
       year: '2017',
@@ -117,7 +117,7 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      title: 'Bull Shark Attack (World Premiere, 2016) — Tanya — by Troy Deutsch',
+      title: 'Bull Shark Attack — by Troy Deutsch, Tanya',
       category: 'World Premiere',
       location: 'Salt Lake City, UT',
       year: '2016',
