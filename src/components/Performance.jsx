@@ -1,4 +1,5 @@
 import AutoCarousel from './AutoCarousel';
+import LocationTag from './LocationTag';
 
 const Performance = () => {
   const imageMap = {
@@ -86,6 +87,7 @@ const Performance = () => {
       role: 'The Convert (4 characters)',
       company: 'Salt Lake Acting Company',
       year: '2022',
+      location: 'Salt Lake City, UT',
       description: 'World premiere by Steve Yockey (creator of HBO\'s "The Flight Attendant"). Played four distinct characters within a single role. Participated in developmental reading (May 2022) before originating the role in full production (Sept-Oct 2022). Critics praised the cast\'s ability to "seamlessly slide into the surreal... beautifully." Co-directed by Emilio Casillas and Shawn Francis Saunders.',
     },
     {
@@ -94,6 +96,7 @@ const Performance = () => {
       role: 'Sarah (Lead)',
       company: 'Salt Lake Acting Company',
       year: '2019',
+      location: 'Salt Lake City, UT',
       description: 'Lead role in this political thriller by Will Snider, following its Off-Broadway world premiere at Urban Stages NYC. Two-person show exploring American-African relationships in Kenya. Developed through SLAC\'s 2018 Playwrights\' Lab.',
     },
     {
@@ -102,6 +105,7 @@ const Performance = () => {
       role: 'Karla',
       company: 'Salt Lake Acting Company',
       year: '2018',
+      location: 'Salt Lake City, UT',
       description: 'Contemporary comedy-drama by Halley Feiffer exploring serious illness with humor and heart.',
     },
     {
@@ -110,6 +114,7 @@ const Performance = () => {
       role: 'Alyson Moss',
       company: 'Salt Lake Acting Company',
       year: '2017',
+      location: 'Salt Lake City, UT',
       description: 'World premiere by Kathleen Cahill that won the Edgerton Foundation New Play Award. Two-person convoy truck drama exploring women in the military. Salt Lake Magazine: "Stokes-Wylie really digs in here and turns Cahill\'s words into an intense jousting match that enlightens and provokes." Salt Lake Tribune praised the "seamless transition between prickly animosity and compassionate moments." Directed by Tamilla Woodard.',
     },
     {
@@ -118,6 +123,7 @@ const Performance = () => {
       role: 'Various Characters',
       company: 'Salt Lake Acting Company',
       year: '2017',
+      location: 'Salt Lake City, UT',
       description: 'Utah\'s beloved annual satirical musical revue. Performed multiple characters in this long-running political satire and comedy. Directed by Cynthia Fleming.',
     },
     {
@@ -126,6 +132,7 @@ const Performance = () => {
       role: 'Tanya',
       company: 'Salt Lake Acting Company',
       year: '2016',
+      location: 'Salt Lake City, UT',
       description: 'Dark comedy by Troy Deutsch. Two-person show requiring physical comedy and dramatic range. Directed by Sandra Shotwell.',
     },
     {
@@ -134,6 +141,7 @@ const Performance = () => {
       role: 'Various Roles',
       company: 'IRT Theatre (Irondale), New York',
       year: '2015',
+      location: 'New York City, NY',
       description: 'New York City production showcasing versatility in multiple roles. Directed by Ashley Monroe and Courtney Ulrich.',
     },
     {
@@ -142,6 +150,7 @@ const Performance = () => {
       role: 'Elizabeth Proctor',
       company: 'The Grand Theatre',
       year: '',
+      location: 'Salt Lake City, UT',
       description: 'Arthur Miller\'s classic drama. Portrayed the morally resolute Elizabeth Proctor in this powerful examination of truth, integrity, and persecution. A demanding dramatic role requiring emotional depth and restraint. Directed by Mark Fossen.',
     },
     {
@@ -150,6 +159,7 @@ const Performance = () => {
       role: 'Mrs. Givings',
       company: 'Pygmalion Theatre Company',
       year: '',
+      location: 'Salt Lake City, UT',
       description: 'Sarah Ruhl\'s Tony-nominated comedy. Lead role as Mrs. Givings exploring Victorian attitudes toward intimacy with wit and poignancy. Directed by Fran Pruyn.',
     },
     {
@@ -158,6 +168,7 @@ const Performance = () => {
       role: 'Anna (Lead)',
       company: 'Utah Theatre Artists Co.',
       year: '',
+      location: 'Salt Lake City, UT',
       description: 'Lanford Wilson\'s passionate drama. Lead role as Anna, a choreographer navigating grief and unexpected attraction. A complex, emotionally demanding performance. Directed by Lane Richins.',
     },
     {
@@ -166,6 +177,7 @@ const Performance = () => {
       role: 'Governess (Lead)',
       company: 'Utah Theater Artists Co.',
       year: '',
+      location: 'Salt Lake City, UT',
       description: 'Gothic psychological thriller adapted from Henry James. Lead role as the Governess in this haunting tale of ambiguity and terror. Directed by Lane Richins.',
     },
     {
@@ -174,6 +186,7 @@ const Performance = () => {
       role: 'Helena',
       company: 'dell\'Arte Opera Ensemble & Classic Stage Company, NYC',
       year: '',
+      location: 'New York City, NY',
       description: 'Purcell\'s baroque opera paired with Shakespeare at Classic Stage Company. Performed Helena, showcasing vocal and acting abilities in this fusion of opera and classical theatre. Directed by Christopher Caines.',
     },
     {
@@ -182,6 +195,7 @@ const Performance = () => {
       role: 'Ensemble, u/s Elizabeth Bennett & Caroline Bingley (performed)',
       company: 'Milwaukee Repertory Theater',
       year: '',
+      location: 'Milwaukee, WI',
       description: 'Major regional theatre production. Understudied and performed the lead role of Elizabeth Bennett and Caroline Bingley, demonstrating range and reliability. Directed by JR Sullivan.',
     },
     {
@@ -190,6 +204,7 @@ const Performance = () => {
       role: 'Ensemble, u/s Lyubov Ranyevskaya',
       company: 'Milwaukee Repertory Theater',
       year: '',
+      location: 'Milwaukee, WI',
       description: 'Chekhov\'s masterwork at one of America\'s leading regional theatres. Understudied the lead role of Lyubov Ranyevskaya. Directed by Ben Barnes.',
     },
     {
@@ -198,6 +213,7 @@ const Performance = () => {
       role: 'Actor',
       company: 'Pygmalion Theatre Company',
       year: '',
+      location: 'Salt Lake City, UT',
       description: 'Production of Eve Ensler\'s The Good Body at Pygmalion Theatre Company.',
     },
     {
@@ -206,6 +222,7 @@ const Performance = () => {
       role: 'Actor',
       company: 'Pygmalion Theatre Company',
       year: '',
+      location: 'Salt Lake City, UT',
       description: 'Production at Pygmalion Theatre Company.',
     },
   ];
@@ -254,6 +271,12 @@ const Performance = () => {
                     <span>{performance.company}</span>
                     <span className="hidden sm:inline">•</span>
                     <span>{performance.year}</span>
+                    {performance.location && (
+                      <>
+                        <span className="hidden sm:inline">•</span>
+                        <LocationTag text={performance.location} />
+                      </>
+                    )}
                   </div>
                   <p className="text-text leading-relaxed">{performance.description}</p>
                 </div>
