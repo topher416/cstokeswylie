@@ -96,7 +96,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/cassandra-stokes-wylie"
+                    href="https://www.linkedin.com/in/cassandra-stokes-wylie-8a311a362/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-300 hover:text-accent transition-colors flex items-center gap-2"

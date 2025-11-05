@@ -132,5 +132,5 @@ This is a personal portfolio site. For suggestions or improvements, please conta
 
 - **Email**: cstokeswylie@gmail.com
 - **Phone**: 801.750.2670
-- **LinkedIn**: [linkedin.com/in/cassandra-stokes-wylie](https://www.linkedin.com/in/cassandra-stokes-wylie)
+- **LinkedIn**: [linkedin.com/in/cassandra-stokes-wylie-8a311a362](https://www.linkedin.com/in/cassandra-stokes-wylie-8a311a362/)
 - **Website**: [cassandrastokeswylie.com](https://cassandrastokeswylie.com)

@@ -37,8 +37,8 @@ const Contact = () => {
         </svg>
       ),
       label: 'LinkedIn',
-      value: 'linkedin.com/in/cassandra-stokes-wylie',
-      link: 'https://www.linkedin.com/in/cassandra-stokes-wylie',
+      value: 'linkedin.com/in/cassandra-stokes-wylie-8a311a362',
+      link: 'https://www.linkedin.com/in/cassandra-stokes-wylie-8a311a362/',
     },
   ];
 
