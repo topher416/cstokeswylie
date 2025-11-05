@@ -26,6 +26,15 @@ const Portfolio = () => {
       '/images/playwrightslab1.JPG',
       '/images/playwrightslab2.JPG',
     ],
+    '"The Good Body" - Pygmalion Theatre Company': [
+      '/images/goodbody1.JPG',
+      '/images/goodbody2.JPG',
+      '/images/goodbody3.JPG',
+    ],
+    '"Cheat" - Pygmalion Theatre Company': [
+      '/images/cheat1.jpg',
+      '/images/cheat2.JPG',
+    ],
   };
   const portfolioItems = [
     {
@@ -74,6 +83,22 @@ const Portfolio = () => {
       category: 'Directing',
       description:
         'Created and directed two short films for SLAC\'s Digital Shorts program: "Bleep" and "Dial-A-Laugh." Expanded artistic range beyond performance and literary management into directing and digital content.',
+      image: null,
+    },
+    {
+      id: 7,
+      title: '"The Good Body" - Pygmalion Theatre Company',
+      category: 'Production Highlight',
+      description:
+        'Eve Ensler\'s The Good Body at Pygmalion Theatre Company. Production photos and materials showcasing performance and staging.',
+      image: null,
+    },
+    {
+      id: 8,
+      title: '"Cheat" - Pygmalion Theatre Company',
+      category: 'Production Highlight',
+      description:
+        'Pygmalion Theatre Company production of Cheat. Gallery of production stills and promotional images.',
       image: null,
     },
   ];
