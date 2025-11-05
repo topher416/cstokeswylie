@@ -1,6 +1,6 @@
-import AutoCarousel from './AutoCarousel';
-import LocationTag from './LocationTag';
-import YearTag from './YearTag';
+import AutoCarousel from './AutoCarousel.jsx';
+import LocationTag from './LocationTag.jsx';
+import YearTag from './YearTag.jsx';
 import { useState } from 'react';
 
 const Portfolio = () => {

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import LocationTag from './LocationTag';
+import LocationTag from './LocationTag.jsx';
 
 const Experience = () => {
   const [expandedId, setExpandedId] = useState(null);

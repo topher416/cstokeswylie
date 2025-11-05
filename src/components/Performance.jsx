@@ -1,5 +1,5 @@
-import AutoCarousel from './AutoCarousel';
-import LocationTag from './LocationTag';
+import AutoCarousel from './AutoCarousel.jsx';
+import LocationTag from './LocationTag.jsx';
 
 const Performance = () => {
   const imageMap = {
