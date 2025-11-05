@@ -8,7 +8,7 @@ const About = () => {
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Professional Headshot */}
-          <div className="order-2 md:order-1">
+          <div className="order-1 md:order-1">
             <div className="aspect-[3/4] rounded-lg shadow-2xl overflow-hidden">
               <img
                 src="/images/headshot.jpeg"
@@ -19,7 +19,7 @@ const About = () => {
           </div>
 
           {/* Bio Content */}
-          <div className="order-1 md:order-2 space-y-6">
+          <div className="order-2 md:order-2 space-y-6">
             <div className="prose prose-lg">
               <p className="text-text leading-relaxed">
                 I've spent over a decade in theatre—both on stage and behind the scenes. As an AEA actor, I've performed
