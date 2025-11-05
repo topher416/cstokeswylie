@@ -43,14 +43,25 @@ const About = () => {
               </p>
             </div>
 
-            {/* Education Highlight */}
+            {/* Education & Training */}
             <div className="mt-8 p-6 bg-background-dark rounded-lg border-l-4 border-accent">
-              <h3 className="text-xl font-semibold mb-2 text-primary">Education</h3>
-              <p className="text-text-light">
-                <span className="font-medium">BFA in Theatre</span>
-                <br />
-                University of Utah
-              </p>
+              <h3 className="text-xl font-semibold mb-3 text-primary">Education & Training</h3>
+              <div className="space-y-3 text-text-light">
+                <p>
+                  <span className="font-medium">BFA in Theatre</span>
+                  <br />
+                  University of Utah — Actor Training Program (2005)
+                </p>
+                <div>
+                  <div className="font-medium text-primary mb-1">Additional Training</div>
+                  <ul className="list-disc pl-5 space-y-1">
+                    <li>Shakespeare &amp; Company — Professional training</li>
+                    <li>Stella Adler Academy — Conservatory/Workshops</li>
+                    <li>Steppenwolf West — Intensive/Scene Study</li>
+                    <li>Milwaukee Repertory Theater — Professional internship</li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
             {/* Key Specialties */}
