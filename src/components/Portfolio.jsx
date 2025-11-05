@@ -41,9 +41,13 @@ const Portfolio = () => {
       description:
         'World premiere of Kathleen Cahill’s triptych about women in the military and the aftermath of war. Originated Alyson Moss; production developed through SLAC’s new-play pipeline and supported by an Edgerton Foundation New Play Award. Press called the staging “powerful,” highlighting stories drawn from Iraq/Afghanistan service members and MST (military sexual trauma).',
       links: [
-        { label: 'The Daily Utah Chronicle', count: 4 },
-        { label: 'saltlakeactingcompany.org', count: 4 },
-        { label: 'The Salt Lake Tribune', count: 4 },
+        { href: 'https://www.saltlakeactingcompany.org/2017/item/1155-harbur-gate' },
+        { href: 'http://www.sltrib.com/home/4885212-155/in-salt-lake-world-premiere-kathleen' },
+        { href: 'https://saltlakemagazine.com/preview-harbur-gate-slac/' },
+        { href: 'http://www.cityweekly.net/TheDailyFeed/archives/2017/02/08/salt-lake-acting-company-harbur-gate' },
+        { href: 'https://saltlakemagazine.com/review-harbur-gate/' },
+        { href: 'http://www.sltrib.com/entertainment/4942712-155/powerful-salt-lake-production-of-harbur' },
+        { href: 'http://dailyutahchronicle.com/2017/02/14/slacs-harbur-gate-heroes-fighting-hope-review/' },
       ],
     },
     {
@@ -54,8 +58,11 @@ const Portfolio = () => {
       description:
         'Originated Tanya in Troy Deutsch’s two-hander dark comedy about small-town longing, myth, and menace. The run opened SLAC’s season; coverage framed it as “Shark Week(s) at SLAC),” noting the show’s blend of physical comedy and emotional volatility.',
       links: [
-        { label: 'saltlakeactingcompany.org', count: 2 },
-        { label: 'The Salt Lake Tribune', count: 2 },
+        { href: 'https://www.saltlakeactingcompany.org/2017/item/1152-bull-shark-attack' },
+        { href: 'https://saltlakemagazine.com/shark-weeks-slac/' },
+        { href: 'http://www.cityweekly.net/TheDailyFeed/archives/2016/09/07/salt-lake-acting-company-bull-shark-attack' },
+        { href: 'http://www.sltrib.com/entertainment/4295199-155/salt-lake-acting-company-world-premiere' },
+        { href: 'http://www.cityweekly.net/utah/the-essential-aande-picks-for-sept-22-28/Content?oid=3467735' },
       ],
     },
     {
@@ -65,7 +72,11 @@ const Portfolio = () => {
       location: 'Salt Lake City, UT',
       description:
         'Played Karla in Halley Feiffer’s brash, big-hearted comedy about two adult children colliding beside their hospitalized mothers. SLAC’s archive compiles reviews and production details; simultaneous Tribune coverage spotlighted SLAC’s adoption of intimacy direction practices to keep artists safe during vulnerable scenes.',
-      links: [{ label: 'saltlakeactingcompany.org', count: 1 }],
+      links: [
+        { href: 'https://www.saltlakeactingcompany.org/shows-ticketing/play-archive/item/1389-a-funny-thing-happened-on-the-way-to-the-gynecologic-oncology-unit-at-memorial-sloan-kettering-cancer-center-of-new-york-city' },
+        { href: 'https://www.sltrib.com/artsliving/2018/09/30/help-actors-feel-safe/' },
+        { href: 'https://www.cityweekly.net/BuzzBlog/archives/2018/09/20/theater-review-salt-lake-acting-companys-a-funny-thing-happened' },
+      ],
     },
     {
       id: 4,
@@ -75,8 +86,12 @@ const Portfolio = () => {
       description:
         'Two-hander by Will Snider about an American engineer and her Kenyan colleague whose friendship buckles under class, politics, and power. Opened SLAC’s 49th season; reviews praised taut pacing and emotionally precise performances.',
       links: [
-        { label: 'saltlakeactingcompany.org', count: 2 },
-        { label: 'The Utah Review', count: 2 },
+        { href: 'https://www.saltlakeactingcompany.org/shows-ticketing/play-archive/item/1467-death-of-a-driver' },
+        { href: 'https://slco.org/zap/blog/salt-lake-acting-company-and-death-of-a-driver/' },
+        { href: 'https://www.theutahreview.com/salt-lake-acting-company-opens-49th-season-with-riveting-utah-premiere-of-death-of-a-driver/' },
+        { href: 'https://frontrowreviewersutah.com/?p=13521' },
+        { href: 'https://dailyutahchronicle.com/2019/09/14/slacs-death-of-a-driver-confronts-the-rollercoaster-of-friendship/' },
+        { href: 'https://www.abc4.com/gtu/sitting-down-with-the-actors-from-death-of-a-driver/' },
       ],
     },
     {
@@ -86,7 +101,9 @@ const Portfolio = () => {
       location: 'Salt Lake City, UT',
       description:
         'Steve Yockey’s surreal, darkly comic mosaic about belief and the monsters we wake. Originated multiple characters in a four-actor ensemble; the production continued SLAC’s emphasis on new-play development through readings and labs.',
-      links: [{ label: 'saltlakeactingcompany.org', count: 0 }],
+      links: [
+        { href: 'https://www.saltlakeactingcompany.org/2022-2023/item/1632-sleeping-giant' },
+      ],
     },
     {
       id: 6,
@@ -95,7 +112,9 @@ const Portfolio = () => {
       location: 'Salt Lake City, UT',
       description:
         'Assistant director on Dipika Guha’s sharp satire of the wellness apparel industry, identity, and the commodification of “enlightenment.” SLAC’s season page credits the AD role and outlines the creative team and production run.',
-      links: [{ label: 'saltlakeactingcompany.org', count: 0 }],
+      links: [
+        { href: 'https://www.saltlakeactingcompany.org/2022-2023/item/1635-yoga-play' },
+      ],
     },
     {
       id: 7,
@@ -105,9 +124,11 @@ const Portfolio = () => {
       description:
         'Assistant director for Noah Diaz’s lyrical meditation on illness, care, and the stories we tell to keep going. Reviews called SLAC’s staging “smartly, directly, solidly acted” and “thought-provoking,” noting how humor and existential dread coexist in the piece.',
       links: [
-        { label: 'Utah Theatre Bloggers', count: 3 },
-        { label: 'saltlakeactingcompany.org', count: 3 },
-        { label: 'The Utah Review', count: 3 },
+        { href: 'https://www.saltlakeactingcompany.org/shows-ticketing/play-archive/item/1716-you-will-get-sick' },
+        { href: 'https://www.theutahreview.com/noah-diazs-you-will-get-sick-receives-smartly-directly-solidly-acted-regional-premiere-at-salt-lake-acting-company/' },
+        { href: 'https://gephardtdaily.com/local/review-you-will-get-sick-at-slac-will-make-you-ponder-the-meaning-of-life-death/' },
+        { href: 'https://frontrowreviewers.com/?p=22403' },
+        { href: 'https://utahtheatrebloggers.com/913113/slac-provides-a-healthy-dose-of-humanity-with-you-will-get-sick' },
       ],
     },
   ];
@@ -180,17 +201,26 @@ const Portfolio = () => {
                 <p className="text-text-light leading-relaxed mb-3">{item.description}</p>
                 {item.links && item.links.length > 0 && (
                   <div className="flex flex-wrap gap-2">
-                    {item.links.map((l, idx) => (
-                      <span
-                        key={idx}
-                        className="inline-flex items-center gap-2 px-3 py-1 rounded bg-white text-primary border border-background-dark text-sm"
-                      >
-                        <span className="font-medium">{l.label}</span>
-                        {typeof l.count === 'number' && l.count > 0 && (
-                          <span className="text-xs text-text-light">+{l.count}</span>
-                        )}
-                      </span>
-                    ))}
+                    {item.links.map((l, idx) => {
+                      const url = l.href;
+                      let host = '';
+                      try {
+                        host = new URL(url).hostname.replace(/^www\./, '');
+                      } catch (e) {
+                        host = url;
+                      }
+                      return (
+                        <a
+                          key={idx}
+                          href={url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-3 py-1 rounded bg-white text-primary border border-background-dark text-sm hover:bg-background-dark/60 transition"
+                        >
+                          <span className="font-medium">{host}</span>
+                        </a>
+                      );
+                    })}
                   </div>
                 )}
               </div>
