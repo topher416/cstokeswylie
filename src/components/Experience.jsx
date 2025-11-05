@@ -34,13 +34,14 @@ const Experience = () => {
     {
       id: 3,
       company: 'Salt Lake Acting Company',
-      title: 'Development & Outreach Coordinator',
+      title: 'Development & Outreach Coordinator / Director of Development',
       dates: 'October 2011 – June 2013',
       highlights: [
         'Led fundraising campaigns and cultivated donor relationships',
         'Wrote grant applications and managed foundation partnerships',
         'Created community outreach programs to expand theatre access',
         'Organized cultivation events and donor stewardship activities',
+        'Served in leadership development role building SLAC\'s fundraising capacity',
       ],
     },
     {

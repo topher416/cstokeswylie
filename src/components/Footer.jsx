@@ -15,8 +15,10 @@ const Footer = () => {
   const quickLinks = [
     { label: 'About', id: 'about' },
     { label: 'Experience', id: 'experience' },
-    { label: 'Portfolio', id: 'portfolio' },
-    { label: 'Skills', id: 'skills' },
+    { label: 'Performance', id: 'performance' },
+    { label: 'Projects', id: 'portfolio' },
+    { label: 'Reviews', id: 'acclaim' },
+    { label: 'Expertise', id: 'skills' },
     { label: 'Contact', id: 'contact' },
   ];
 
@@ -34,7 +36,7 @@ const Footer = () => {
                 Cassandra Stokes-Wylie
               </button>
               <p className="text-gray-300 leading-relaxed">
-                Theatre Professional | Arts Administrator | Community Builder
+                Actor | Literary Manager | Theatre Administrator
               </p>
             </div>
 

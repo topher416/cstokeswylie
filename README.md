@@ -18,8 +18,10 @@ This website showcases Cassandra's extensive experience in theatre administratio
 - **Responsive Design** - Optimized for mobile, tablet, and desktop
 - **Smooth Scrolling** - Intuitive navigation between sections
 - **Interactive Timeline** - Expandable experience cards
-- **Portfolio Grid** - Filterable project showcase
-- **SEO Optimized** - Meta tags and semantic HTML
+- **Performance Section** - Complete acting credits with AEA status
+- **Critical Acclaim** - Reviews from regional publications and award recognition
+- **Portfolio Projects** - Award-winning productions including Edgerton Foundation winners
+- **SEO Optimized** - Meta tags highlighting awards and achievements
 - **Accessible** - WCAG compliant with keyboard navigation
 
 ## 📂 Project Structure
@@ -27,14 +29,16 @@ This website showcases Cassandra's extensive experience in theatre administratio
 ```
 src/
 ├── components/
-│   ├── Navigation.jsx    # Sticky navigation with smooth scroll
-│   ├── Hero.jsx          # Landing section with CTA
-│   ├── About.jsx         # Biography and education
-│   ├── Experience.jsx    # Professional timeline
-│   ├── Portfolio.jsx     # Featured work showcase
-│   ├── Skills.jsx        # Competencies display
-│   ├── Contact.jsx       # Contact information
-│   └── Footer.jsx        # Site footer
+│   ├── Navigation.jsx       # Sticky navigation with smooth scroll
+│   ├── Hero.jsx             # Landing section with CTA
+│   ├── About.jsx            # Biography and education
+│   ├── Experience.jsx       # Professional timeline (administrative)
+│   ├── Performance.jsx      # Acting credits and performance history
+│   ├── Portfolio.jsx        # Featured projects and productions
+│   ├── CriticalAcclaim.jsx  # Reviews, quotes, and awards
+│   ├── Skills.jsx           # Areas of expertise
+│   ├── Contact.jsx          # Contact information and availability
+│   └── Footer.jsx           # Site footer with links
 ├── assets/
 │   └── images/          # Image assets
 ├── index.css            # Global styles and Tailwind
