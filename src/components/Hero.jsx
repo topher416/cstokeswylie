@@ -89,6 +89,13 @@ const Hero = () => {
               src={src}
               alt=""
               onLoad={(e) => handleLoad(src, e)}
+              onError={(e) => {
+                const el = e.currentTarget;
+                // Try swapping JPG/jpg case, then fallback to a safe image
+                if (/\.JPG$/.test(el.src)) el.src = el.src.replace(/\.JPG$/, '.jpg');
+                else if (/\.jpg$/.test(el.src)) el.src = el.src.replace(/\.jpg$/, '.JPG');
+                else el.src = '/images/sleepinggiant1cropped.jpg';
+              }}
               className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${fitClass} ${
                 i === index ? 'opacity-100' : 'opacity-0'
               }`}
