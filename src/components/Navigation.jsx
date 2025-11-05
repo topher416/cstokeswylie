@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,19 +19,25 @@ const Navigation = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
       setIsMobileMenuOpen(false);
+      setIsDropdownOpen(false);
     }
   };
 
-  const navLinks = [
+  const mainNavLinks = [
     { id: 'about', label: 'About' },
-    { id: 'statement', label: 'Statement' },
     { id: 'experience', label: 'Experience' },
     { id: 'performance', label: 'Performance' },
+    { id: 'contact', label: 'Contact' },
+  ];
+
+  const moreNavLinks = [
+    { id: 'statement', label: 'Artist Statement' },
     { id: 'portfolio', label: 'Projects' },
     { id: 'acclaim', label: 'Reviews' },
     { id: 'skills', label: 'Expertise' },
-    { id: 'contact', label: 'Contact' },
   ];
+
+  const allNavLinks = [...mainNavLinks, ...moreNavLinks];
 
   return (
     <nav
@@ -51,8 +58,8 @@ const Navigation = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            {navLinks.map((link) => (
+          <div className="hidden md:flex items-center space-x-8">
+            {mainNavLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
@@ -61,6 +68,39 @@ const Navigation = () => {
                 {link.label}
               </button>
             ))}
+
+            {/* More Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                onBlur={() => setTimeout(() => setIsDropdownOpen(false), 200)}
+                className="text-text hover:text-accent transition-colors font-medium flex items-center gap-1"
+              >
+                More
+                <svg
+                  className={`w-4 h-4 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {isDropdownOpen && (
+                <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl py-2 border border-gray-100">
+                  {moreNavLinks.map((link) => (
+                    <button
+                      key={link.id}
+                      onClick={() => scrollToSection(link.id)}
+                      className="block w-full text-left px-4 py-2 text-text hover:bg-background-dark hover:text-accent transition-colors"
+                    >
+                      {link.label}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -97,7 +137,7 @@ const Navigation = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-2">
-            {navLinks.map((link) => (
+            {allNavLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
