@@ -2,29 +2,84 @@ const Performance = () => {
   const performances = [
     {
       id: 1,
-      title: '[Production Title]',
-      role: 'Role Name',
-      company: 'Theatre Company',
-      year: '20XX',
-      description: 'Description of the role and production. Add any notable reviews, awards, or achievements.',
+      title: 'Saturday\'s Voyeur',
+      role: 'Various Characters',
+      company: 'Salt Lake Acting Company',
+      year: 'Recent',
+      description: 'Utah\'s beloved musical comedy revue. Performed multiple characters in this satirical take on local and national politics, showcasing comedic timing and versatility. Directed by Cynthia Fleming.',
     },
     {
       id: 2,
-      title: '[Production Title]',
-      role: 'Role Name',
-      company: 'Theatre Company',
-      year: '20XX',
-      description: 'Description of the role and production.',
+      title: 'Harbur Gate',
+      role: 'Moss',
+      company: 'Salt Lake Acting Company',
+      year: 'Recent',
+      description: 'Contemporary drama exploring themes of identity and belonging. Directed by Tamilla Woodard.',
     },
     {
       id: 3,
-      title: '[Production Title]',
-      role: 'Role Name',
-      company: 'Theatre Company',
-      year: '20XX',
-      description: 'Description of the role and production.',
+      title: 'Bull Shark Attack',
+      role: 'Tanya',
+      company: 'Salt Lake Acting Company',
+      year: 'Recent',
+      description: 'Dark comedy requiring physical comedy and dramatic range. Directed by Sandra Shotwell.',
     },
-    // Add more performances as needed
+    {
+      id: 4,
+      title: 'The Crucible',
+      role: 'Elizabeth Proctor',
+      company: 'The Grand Theatre',
+      year: '',
+      description: 'Arthur Miller\'s classic drama. Portrayed the morally resolute Elizabeth Proctor in this powerful examination of truth, integrity, and persecution. A demanding dramatic role requiring emotional depth and restraint. Directed by Mark Fossen.',
+    },
+    {
+      id: 5,
+      title: 'Burn This',
+      role: 'Anna',
+      company: 'Utah Theatre Artists Co.',
+      year: '',
+      description: 'Lanford Wilson\'s passionate drama. Lead role as Anna, a choreographer navigating grief and unexpected attraction. A complex, emotionally demanding performance. Directed by Lane Richins.',
+    },
+    {
+      id: 6,
+      title: 'The Turn of the Screw',
+      role: 'Governess',
+      company: 'Utah Theater Artists Co.',
+      year: '',
+      description: 'Gothic psychological thriller adapted from Henry James. Lead role as the Governess in this haunting tale of ambiguity and terror. Directed by Lane Richins.',
+    },
+    {
+      id: 7,
+      title: 'In the Next Room (or the vibrator play)',
+      role: 'Mrs. Givings',
+      company: 'Pygmalion Theatre Company',
+      year: '',
+      description: 'Sarah Ruhl\'s witty, poignant comedy about Victorian attitudes toward intimacy. Played the intelligent, searching Mrs. Givings. Directed by Fran Pruyn.',
+    },
+    {
+      id: 8,
+      title: 'The Fairy Queen with A Midsummer Night\'s Dream',
+      role: 'Helena',
+      company: 'dell\'Arte Opera Ensemble & Classic Stage Company',
+      year: '',
+      description: 'Purcell\'s baroque opera paired with Shakespeare. Performed Helena, showcasing vocal and acting abilities in this fusion of opera and classical theatre. Directed by Christopher Caines.',
+    },
+    {
+      id: 9,
+      title: 'Pride and Prejudice',
+      role: 'Ensemble, u/s Elizabeth Bennett & Caroline Bingley (performed)',
+      company: 'Milwaukee Repertory Theater',
+      year: '',
+      description: 'Major regional theatre production. Understudied and performed the lead role of Elizabeth Bennett and Caroline Bingley, demonstrating range and reliability. Directed by JR Sullivan.',
+    },
+    {
+      id: 10,
+      title: 'The Cherry Orchard',
+      role: 'Ensemble, u/s Lyubov Ranyevskaya',
+      company: 'Milwaukee Repertory Theater',
+      year: '',
+      description: 'Chekhov\'s masterwork at one of America\'s leading regional theatres. Understudied the lead role of Lyubov Ranyevskaya. Directed by Ben Barnes.',
+    },
   ];
 
   return (
@@ -33,10 +88,22 @@ const Performance = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
           Performance Work
         </h2>
-        <p className="text-center text-text-light text-lg mb-12 max-w-3xl mx-auto">
-          Selected acting roles and performances.
-          <span className="block mt-2 text-sm italic">(Ready to add your performance history, headshots, and reels!)</span>
+        <p className="text-center text-text-light text-lg mb-8 max-w-3xl mx-auto">
+          Selected roles from regional theatre, including Salt Lake Acting Company, Milwaukee Repertory Theater,
+          and New York companies. Trained at University of Utah (BFA), Milwaukee Rep, Shakespeare & Company,
+          and Stella Adler Academy.
         </p>
+        <div className="text-center mb-12">
+          <span className="inline-block px-4 py-2 bg-accent/10 text-accent-dark rounded-full text-sm font-medium mr-3">
+            AEA (Actors' Equity Association)
+          </span>
+          <span className="inline-block px-4 py-2 bg-accent/10 text-accent-dark rounded-full text-sm font-medium mr-3">
+            Mezzo Soprano
+          </span>
+          <span className="inline-block px-4 py-2 bg-accent/10 text-accent-dark rounded-full text-sm font-medium">
+            Stage Combat • Dialects • Singing
+          </span>
+        </div>
 
         <div className="space-y-6">
           {performances.map((performance) => (
