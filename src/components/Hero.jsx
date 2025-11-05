@@ -72,7 +72,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-end justify-start overflow-hidden p-4 md:p-8 lg:p-12 pb-24">
       {/* Fallback background to avoid gray flash while first image loads */}
       <div
-        className="absolute inset-0 bg-center bg-no-repeat"
+        className="absolute inset-0 bg-center bg-no-repeat z-0"
         style={{ backgroundImage: "url('/images/sleepinggiant1cropped.jpg')", backgroundSize: 'contain' }}
       />
 
@@ -80,15 +80,15 @@ const Hero = () => {
       <AutoCarousel
         images={heroImages}
         interval={5000}
-        className="absolute inset-0"
+        className="absolute inset-0 z-0"
         fit="auto"
         imgClassName=""
       />
 
       {/* Dark Overlay for Text Readability */}
-      <div className="absolute inset-0 bg-black/30"></div>
+      <div className="absolute inset-0 bg-black/30 z-10"></div>
 
-      <div className="relative section-container text-left z-10 max-w-4xl">
+      <div className="relative section-container text-left z-20 max-w-4xl">
         <div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-2 md:mb-4 text-white">
