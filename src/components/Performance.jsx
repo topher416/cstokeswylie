@@ -9,20 +9,25 @@ const Performance = () => {
       '/images/sleepinggiant3cropped.jpg',
     ],
     'Death of a Driver': [
-      '/images/deathofadriver3cropped.jpg',
-      '/images/deathofadriver5cropped.jpg',
+      '/images/deathofadriver1.jpg',
+      '/images/deathofadriver2.jpg',
+      '/images/deathofadriver4.jpg',
+      '/images/deathofadriver6.jpg',
+      '/images/deathofadriver7.jpg',
       '/images/deathofadriver8cropped.jpg',
     ],
     'A Funny Thing Happened on the Way to the Gynecologic Oncology Unit...': [
+      '/images/funnything1.jpg',
+      '/images/funnything3.jpg',
       '/images/funnything4cropped.jpg',
-      '/images/funnything5cropped.jpg',
-      '/images/funnything9cropped.jpg',
-      '/images/funnything10.JPG',
+      '/images/funnything6.jpg',
+      '/images/funnything7.jpg',
+      '/images/funnything8.jpg',
     ],
     'Harbur Gate': [
-      '/images/harburgate1cropped.jpg',
       '/images/harburgate2cropped.jpg',
-      '/images/harburgate3cropped.jpg',
+      '/images/harburgate7.jpg',
+      '/images/harburgate8.jpg',
     ],
     "Saturday's Voyeur": [
       '/images/saturdays_voyeur_2017_ensemble_dance.jpeg',
@@ -30,6 +35,14 @@ const Performance = () => {
       '/images/voyeur2.JPG',
       '/images/voyeur3.JPG',
       '/images/voyeur4.JPG',
+      '/images/voyeur5.jpg',
+      '/images/voyeur6.jpg',
+      '/images/voyeur7.jpg',
+      '/images/voyeur8.jpg',
+      '/images/voyeur9.jpg',
+      '/images/voyeur10.jpg',
+      '/images/voyeur11.jpg',
+      '/images/voyeur12.jpg',
     ],
     'Bull Shark Attack': [
       '/images/bullshark1.jpg',
@@ -40,19 +53,23 @@ const Performance = () => {
     'In a Tilted Place': [
       '/images/tiltedplace1.JPG',
       '/images/tiltedplace2.jpg',
-      '/images/tiltedplace2_copy.JPG',
       '/images/tiltedplace3.jpg',
+      '/images/tiltedplace4.jpg',
+      '/images/tiltedplace5.jpg',
+      '/images/tiltedplace6.jpg',
+      '/images/tiltedplace7.jpg',
+      '/images/troydeutsch1.jpg',
+      '/images/troydeutsch2.jpg',
     ],
     'The Crucible': ['/images/crucible1.jpg', '/images/crucible2.jpg', '/images/crucible3.webp'],
     "The Fairy Queen with A Midsummer Night's Dream": [
       '/images/midsummer1.JPG',
       '/images/midsummer2.JPG',
-      '/images/midsummer3.JPG',
       '/images/midsummer4.JPG',
-      '/images/midsummer5.JPG',
       '/images/midsummer6.JPG',
       '/images/midsummer7.JPG',
       '/images/midsummer8.JPG',
+      '/images/midsummer9.jpg',
     ],
     'In the Next Room (or the vibrator play)': [
       '/images/at_oct13_pygmalion1.jpg',
@@ -78,6 +95,25 @@ const Performance = () => {
     Cheat: [
       '/images/cheat1.jpg',
       '/images/cheat2.JPG',
+      '/images/cheat3.jpg',
+    ],
+    'The Exit Interview': [
+      '/images/exitinterview1.jpg',
+      '/images/exitinterview2.jpg',
+      '/images/exitinterview3.png',
+    ],
+    'The Turn of the Screw': [
+      '/images/turnofthescrew1.jpg',
+    ],
+    'The Shape of Things': [
+      '/images/shapeofthings1.jpg',
+      '/images/shapeofthings2.jpg',
+    ],
+    'Stags and Hens': [
+      '/images/stagsandhens2003.jpg',
+    ],
+    'The Comedy of Errors': [
+      '/images/comedyoferrors20051.jpg',
     ],
   };
   const performances = [
@@ -400,6 +436,36 @@ const Performance = () => {
       location: 'Salt Lake City, UT',
       description: 'Production at Salt Lake Shakespeare.',
     },
+    {
+      id: 29,
+      title: 'The Comedy of Errors',
+      playwright: 'William Shakespeare',
+      role: '',
+      company: 'University of Utah Actor Training Program',
+      year: '2005',
+      location: 'Salt Lake City, UT',
+      description: 'University of Utah Actor Training Program production.',
+    },
+    {
+      id: 30,
+      title: 'The Shape of Things',
+      playwright: 'Neil LaBute',
+      role: '',
+      company: 'University of Utah Actor Training Program',
+      year: '2004',
+      location: 'Salt Lake City, UT',
+      description: 'University of Utah Actor Training Program production.',
+    },
+    {
+      id: 31,
+      title: 'Stags and Hens',
+      playwright: 'Willy Russell',
+      role: '',
+      company: 'University of Utah Actor Training Program',
+      year: '2003',
+      location: 'Salt Lake City, UT',
+      description: 'University of Utah Actor Training Program production.',
+    },
   ];
 
   return (
@@ -441,8 +507,12 @@ const Performance = () => {
                     {performance.title} by {performance.playwright}
                   </h3>
                   <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-text-light mb-3">
-                    <span className="font-medium text-accent">{performance.role}</span>
-                    <span className="hidden sm:inline">•</span>
+                    {performance.role && (
+                      <>
+                        <span className="font-medium text-accent">{performance.role}</span>
+                        <span className="hidden sm:inline">•</span>
+                      </>
+                    )}
                     <span>{performance.company}</span>
                     <span className="hidden sm:inline">•</span>
                     <span>{performance.year}</span>
