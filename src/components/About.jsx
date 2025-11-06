@@ -22,17 +22,16 @@ const About = () => {
           <div className="order-2 md:order-2 space-y-6">
             <div className="prose prose-lg">
               <p className="text-text leading-relaxed">
-                I've spent over a decade in theatre—both on stage and behind the scenes. As an AEA actor, I've performed
+                I've spent two decades in theatre—both on stage and behind the scenes. As an AEA actor, I've performed
                 lead roles in everything from Chekhov to world premieres, including an <strong>Edgerton Foundation New Play
                 Award</strong> winner. I know what artists need because I've been in their shoes.
               </p>
 
               <p className="text-text leading-relaxed">
-                As Literary Manager at Salt Lake Acting Company (2018–2024), I read over 500 scripts annually,
+                As Literary Manager at Salt Lake Acting Company (2018–2024), I read hundreds of scripts annually,
                 championed world premieres by nationally recognized playwrights (including Steve Yockey, creator of HBO's
                 "The Flight Attendant"), and helped shape six seasons of programming. I worked directly with playwrights
-                in developmental labs, built donor partnerships for new work, and even directed digital content—expanding
-                SLAC's artistic reach during challenging times.
+                in developmental labs and built donor partnerships for new work.
               </p>
 
               <p className="text-text leading-relaxed">
