@@ -235,14 +235,6 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
-
-        {/* Note about adding content */}
-        <div className="mt-12 text-center">
-          <p className="text-text-light italic">
-            This portfolio section can be expanded with performance videos, production photos,
-            press mentions, and detailed case studies.
-          </p>
-        </div>
       </div>
     </section>
   );
