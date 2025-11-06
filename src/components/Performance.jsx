@@ -357,15 +357,23 @@ const Performance = () => {
           ))}
         </div>
 
-        {/* Call out for video/images */}
-        <div className="mt-12 text-center p-8 bg-white rounded-lg">
-          <h3 className="text-xl font-semibold text-primary mb-3">Performance Reels & Media</h3>
-          <p className="text-text-light mb-4">
-            This section can showcase performance videos, headshots, production photos, and reviews.
-          </p>
-          <p className="text-sm text-text-lighter italic">
-            Placeholder for: performance reel embed, production photos gallery, press quotes, etc.
-          </p>
+        {/* Performance Reel */}
+        <div className="mt-12 bg-white rounded-lg p-8">
+          <h3 className="text-xl font-semibold text-primary mb-6 text-center">Performance Reels & Media</h3>
+          <div className="max-w-4xl mx-auto">
+            <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/AIQ4o1MXWHk"
+                title="Performance Reel"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </section>
