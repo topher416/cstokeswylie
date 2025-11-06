@@ -102,6 +102,7 @@ const Performance = () => {
       location: 'Salt Lake City, UT',
       description: 'Lead role in this political thriller, following its Off-Broadway world premiere at Urban Stages NYC. A riveting counterpoint between an American engineer and a Kenyan driver navigating complex social and political landscapes. Developed through SLAC\'s 2018 Playwrights\' Lab.',
       reviewLink: 'https://www.theutahreview.com/salt-lake-acting-company-opens-49th-season-with-riveting-utah-premiere-of-death-of-a-driver/',
+      videoEmbed: 'https://www.youtube.com/embed/Esq0j-UtGb8',
     },
     {
       id: 3,
@@ -479,6 +480,22 @@ const Performance = () => {
                           ))}
                         </div>
                       )}
+                    </div>
+                  )}
+                  {performance.videoEmbed && (
+                    <div className="mt-6">
+                      <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
+                        <iframe
+                          width="100%"
+                          height="100%"
+                          src={performance.videoEmbed}
+                          title={`${performance.title} video`}
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowFullScreen
+                          className="w-full h-full"
+                        ></iframe>
+                      </div>
                     </div>
                   )}
                 </div>
