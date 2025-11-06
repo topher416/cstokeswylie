@@ -96,6 +96,7 @@ const Performance = () => {
       '/images/cheat1.jpg',
       '/images/cheat2.JPG',
       '/images/cheat3.jpg',
+      '/images/cheat4.jpg',
     ],
     'The Exit Interview': [
       '/images/exitinterview1.jpg',
