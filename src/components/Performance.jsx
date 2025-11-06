@@ -128,6 +128,7 @@ const Performance = () => {
         'https://www.saltlakeactingcompany.org/about/latest-news/item/1230-salt-lake-magazine-harbur-gate-review',
         'https://www.saltlakeactingcompany.org/about/latest-news/item/1233-salt-lake-tribune-review-of-harbur-gate'
       ],
+      videoEmbed: 'https://www.youtube.com/embed/bqcdJ8zemXI',
     },
     {
       id: 5,
