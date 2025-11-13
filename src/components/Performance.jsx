@@ -31,18 +31,7 @@ const Performance = () => {
     ],
     "Saturday's Voyeur": [
       '/images/saturdays_voyeur_2017_ensemble_dance.jpeg',
-      '/images/voyeur1.JPG',
-      '/images/voyeur2.JPG',
-      '/images/voyeur3.JPG',
       '/images/voyeur4.JPG',
-      '/images/voyeur5.jpg',
-      '/images/voyeur6.jpg',
-      '/images/voyeur7.jpg',
-      '/images/voyeur8.jpg',
-      '/images/voyeur9.jpg',
-      '/images/voyeur10.jpg',
-      '/images/voyeur11.jpg',
-      '/images/voyeur12.jpg',
     ],
     'Bull Shark Attack': [
       '/images/bullshark1.jpg',
