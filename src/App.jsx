@@ -16,9 +16,9 @@ function App() {
       <Navigation />
       <Hero />
       <About />
-      <ArtistStatement />
       <Experience />
       <Portfolio />
+      <ArtistStatement />
       <Performance />
       <CriticalAcclaim />
       <Skills />
