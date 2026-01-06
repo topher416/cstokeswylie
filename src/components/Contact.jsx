@@ -51,11 +51,8 @@ const Contact = () => {
         <div className="bg-accent/10 border-2 border-accent rounded-lg p-6 mb-8 max-w-2xl mx-auto">
           <h3 className="text-xl font-bold text-accent mb-2">Currently Available</h3>
           <p className="text-text">
-            Seeking roles in grants management, literary management, artistic administration, or development at mission-driven theater and arts organizations.
+            Seeking associate producer, production management, literary management, or arts administration roles at mission-driven theater organizations.
             <span className="block mt-1">Open to full-time, consulting, or interim positions.</span>
-          </p>
-          <p className="text-text-light text-sm mt-3">
-            Particularly drawn to organizations centering community voices, new work, youth programming, and equity-driven storytelling.
           </p>
         </div>
 

@@ -1,6 +1,7 @@
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
+import Testimonial from './components/Testimonial';
 import ArtistStatement from './components/ArtistStatement';
 import Experience from './components/Experience';
 import GrantsDevelopment from './components/GrantsDevelopment';
@@ -19,6 +20,7 @@ function App() {
       <Navigation />
       <Hero />
       <About />
+      <Testimonial />
       <Experience />
       <GrantsDevelopment />
       <CommunityEngagement />

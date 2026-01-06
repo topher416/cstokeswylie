@@ -56,15 +56,14 @@ const About = () => {
               <h3 className="text-xl font-semibold mb-4 text-primary">What I Do Best</h3>
               <div className="flex flex-wrap gap-2">
                 {[
-                  'Grant Writing & Reporting',
-                  'Institutional Fundraising',
+                  'Production Coordination',
+                  'Season Planning',
+                  'Contract Negotiation',
+                  'Artist & Playwright Relations',
                   'New Play Development',
+                  'Cross-Departmental Collaboration',
                   'Community Partnerships',
-                  'Season Programming',
-                  'Board & Donor Communications',
-                  'Audience Development',
                   'EDI Implementation',
-                  'Arts Education',
                 ].map((specialty) => (
                   <span
                     key={specialty}
