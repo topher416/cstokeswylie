@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import ArtistStatement from './components/ArtistStatement';
 import Experience from './components/Experience';
+import GrantsDevelopment from './components/GrantsDevelopment';
 import CommunityEngagement from './components/CommunityEngagement';
 import ArtsEducation from './components/ArtsEducation';
 import Performance from './components/Performance';
@@ -19,6 +20,7 @@ function App() {
       <Hero />
       <About />
       <Experience />
+      <GrantsDevelopment />
       <CommunityEngagement />
       <ArtsEducation />
       <Portfolio />

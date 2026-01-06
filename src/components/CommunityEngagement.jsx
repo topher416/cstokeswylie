@@ -3,22 +3,22 @@ const CommunityEngagement = () => {
     {
       title: 'YWCA Utah',
       description:
-        'Holiday giving drive during annual children\'s play run. Collected clothes, toys, and essentials for the domestic violence shelter\'s pop-up market.',
+        'Holiday giving drive during annual children\'s play. Collected clothes, toys, games, and essentials for the domestic violence shelter\'s pop-up market where mothers could find gifts for their children.',
     },
     {
       title: 'Volunteers of America Youth Resource Center',
       description:
-        'Partnership highlighting support for unhoused teens. Organized patron collection drive for toiletries, first aid supplies, and daily essentials.',
+        'Partnership spotlighting support for unhoused teens in Salt Lake City. Organized patron collection drive for toiletries, first aid supplies, and daily essentials.',
     },
     {
       title: 'Flourish Bakery',
       description:
-        'Hired for special events—a bakery supporting individuals in addiction recovery learning culinary skills and earning living wages.',
+        'Hired for special events—a social enterprise bakery supporting individuals in addiction recovery learning culinary skills and earning living wages.',
     },
     {
-      title: 'Panel Discussions',
+      title: 'Community Panel Discussions',
       description:
-        'Curated university professors, civic leaders, and artists for post-show conversations that elevated productions\' themes beyond the stage.',
+        'Curated university professors, civic leaders, and artists for post-show conversations elevating productions\' themes beyond the stage.',
     },
   ];
 
@@ -26,7 +26,7 @@ const CommunityEngagement = () => {
     <section id="community" className="section-container bg-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
-          Community Engagement
+          Community Partnerships
         </h2>
         <p className="text-center text-text-light text-lg mb-12 max-w-3xl mx-auto">
           Building meaningful connections between theatre and the communities it serves.

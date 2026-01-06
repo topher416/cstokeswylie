@@ -22,22 +22,15 @@ const About = () => {
           <div className="order-2 md:order-2 space-y-6">
             <div className="prose prose-lg">
               <p className="text-text leading-relaxed text-lg font-medium">
-                I build the infrastructure that lets artists make transformative theatre.
+                Mission-driven nonprofit professional with a decade of experience in arts administration and development, specializing in grant writing, reporting, and translating impact-focused programs into compelling, equity-driven narratives.
               </p>
 
               <p className="text-text leading-relaxed">
-                As Literary Manager at Salt Lake Acting Company (2018–2024), I read hundreds of scripts annually,
-                championed world premieres by nationally recognized playwrights, and helped shape six seasons of
-                programming. I worked directly with playwrights in developmental labs, built donor partnerships for
-                new work, and created community engagement initiatives that connected productions to the organizations
-                and audiences they spoke to.
+                At Salt Lake Acting Company, I worked at the intersection of artistic programming and institutional fundraising—researching funding opportunities, writing and reporting on grants, coordinating timelines, and translating a production's stories and themes into clear, compelling language that resonates with funders. My literary management background means I know how to adapt voice and tone, integrate feedback, and center equity and lived experience in written materials.
               </p>
 
               <p className="text-text leading-relaxed">
-                My background as an AEA actor informs everything I do—I know what artists need because I've been in
-                their shoes. But my focus is on the operational and relational work that makes great theatre possible:
-                managing budgets, writing grants, coordinating logistics, cultivating partnerships, and creating
-                inclusive spaces where artists can do their best work.
+                I bring a collaborative, detail-oriented approach and thrive in environments that balance thoughtful project management with mission-driven creativity. My background as an AEA actor informs everything I do—I know what artists need because I've been in their shoes.
               </p>
             </div>
 
@@ -67,13 +60,13 @@ const About = () => {
               <h3 className="text-xl font-semibold mb-4 text-primary">What I Do Best</h3>
               <div className="flex flex-wrap gap-2">
                 {[
+                  'Grant Writing & Reporting',
+                  'Institutional Fundraising',
                   'New Play Development',
-                  'Playwright Relationships',
-                  'Season Curation',
-                  'Grant Writing & Fundraising',
-                  'Audience Development',
-                  'Theatre Operations',
                   'Community Partnerships',
+                  'Season Programming',
+                  'Board & Donor Communications',
+                  'Audience Development',
                   'EDI Implementation',
                   'Arts Education',
                 ].map((specialty) => (
