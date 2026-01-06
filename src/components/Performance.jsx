@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import AutoCarousel from './AutoCarousel.jsx';
 import LocationTag from './LocationTag.jsx';
 
 const Performance = () => {
+  const [showAll, setShowAll] = useState(false);
   const imageMap = {
     'Sleeping Giant': [
       '/images/sleepinggiant1cropped.jpg',
@@ -479,7 +481,7 @@ const Performance = () => {
         </div>
 
         <div className="space-y-6">
-          {performances.map((performance) => (
+          {(showAll ? performances : performances.slice(0, 6)).map((performance) => (
             <div
               key={performance.id}
               className="bg-white rounded-lg p-0 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
@@ -564,6 +566,28 @@ const Performance = () => {
             </div>
           ))}
         </div>
+
+        {/* View Full Performance History Button */}
+        {!showAll && performances.length > 6 && (
+          <div className="text-center mt-8">
+            <button
+              onClick={() => setShowAll(true)}
+              className="inline-flex items-center px-6 py-3 bg-accent text-white rounded-lg font-medium hover:bg-accent-dark transition-colors"
+            >
+              View Full Performance History →
+            </button>
+          </div>
+        )}
+        {showAll && (
+          <div className="text-center mt-8">
+            <button
+              onClick={() => setShowAll(false)}
+              className="inline-flex items-center px-6 py-3 bg-gray-200 text-text rounded-lg font-medium hover:bg-gray-300 transition-colors"
+            >
+              Show Less
+            </button>
+          </div>
+        )}
 
         {/* Performance Reel */}
         <div className="mt-12 bg-white rounded-lg p-8">

@@ -1,33 +1,38 @@
 const GrantsDevelopment = () => {
   const highlights = [
     {
-      title: 'New Play Sounding Series Funding',
+      title: 'Season Planning & Execution',
       description:
-        'Facilitated and secured funding for SLAC\'s signature new play development program, leading 11 workshops from 2019-2024. Managed grant research, proposal writing, reporting, and budget tracking to bring innovative new work to life.',
+        'Guided season planning and project execution for multiple mainstage productions and the New Play Sounding Series. Directed scheduling, milestone tracking, and cross-departmental coordination to align artistic and production goals.',
     },
     {
-      title: 'Foundation & Government Grants',
+      title: 'Contract & Budget Management',
       description:
-        'Researched, wrote, and submitted grant proposals and reports for foundation and government funders. Tracked deliverables, timelines, and compliance across program and finance teams.',
+        'Negotiated and administered contracts with artists, playwrights, and agents. Managed budgets and facilitated offers for creative team members.',
     },
     {
-      title: 'Narrative Translation',
+      title: 'Production Support',
       description:
-        'Translated productions\' artistic vision into compelling, equity-centered language for funders and stakeholders. Adapted voice and tone across materials while centering lived experience and community impact.',
+        'Evaluated production needs for dialects, intimacy coaching, and fight choreography. Coordinated travel accommodations for visiting artists. Hired creative teams and facilitated auditions.',
+    },
+    {
+      title: 'Workflow Design',
+      description:
+        'Designed operational workflows to streamline departmental processes and enhance production efficiency.',
     },
   ];
 
   return (
-    <section id="grants-development" className="section-container bg-white">
+    <section id="production-operations" className="section-container bg-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
-          Grants & Development Work
+          Production & Operations
         </h2>
         <p className="text-center text-text-light text-lg mb-12 max-w-3xl mx-auto">
-          Translating artistic vision into compelling narratives that secure funding and build partnerships.
+          Bridging artistic vision and administrative execution to bring productions to life.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {highlights.map((item, index) => (
             <div
               key={index}

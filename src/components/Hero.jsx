@@ -118,7 +118,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-4 md:mb-6 font-light">
-            Arts Administrator | Grant Writer | New Play Development
+            Arts Administration · Literary Management · Development
           </p>
 
           {/* Intro paragraph removed per request */}
