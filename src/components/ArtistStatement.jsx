@@ -1,12 +1,41 @@
+import { useState } from 'react';
+
 const ArtistStatement = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
     <section id="statement" className="section-container bg-background-dark">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 md:mb-16">
-          Artist Statement
-        </h2>
+        <button
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="w-full flex items-center justify-center gap-4 group"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-center group-hover:text-accent transition-colors">
+            Acting Philosophy
+          </h2>
+          <svg
+            className={`w-8 h-8 text-accent transition-transform duration-300 ${
+              isExpanded ? 'rotate-180' : ''
+            }`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
 
-        <div className="space-y-8">
+        <p className="text-center text-text-light text-lg mt-4 mb-8">
+          {isExpanded ? 'Click to collapse' : 'Click to expand my approach to performance'}
+        </p>
+
+        {isExpanded && (
+          <div className="space-y-8 animate-fadeIn">
           {/* Opening - Who I Am */}
           <div className="prose prose-lg max-w-none">
             <p className="text-text leading-relaxed text-lg">
@@ -90,6 +119,7 @@ const ArtistStatement = () => {
             </div>
           </div>
         </div>
+        )}
       </div>
     </section>
   );

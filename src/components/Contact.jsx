@@ -51,7 +51,7 @@ const Contact = () => {
         <div className="bg-accent/10 border-2 border-accent rounded-lg p-6 mb-8 max-w-2xl mx-auto">
           <h3 className="text-xl font-bold text-accent mb-2">Currently Available</h3>
           <p className="text-text">
-            Seeking literary management, artistic administration, or development roles in theatre.
+            Seeking leadership roles in literary management, artistic administration, community engagement, or new play development.
             <span className="block mt-1">Open to full-time, consulting, or interim positions.</span>
           </p>
         </div>

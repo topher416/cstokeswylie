@@ -56,6 +56,8 @@ const Skills = () => {
         'Post-show discussions & talkbacks',
         'Community partnership building',
         'Educational programming',
+        'Equity, diversity & inclusion initiatives',
+        'Arts education program design',
       ],
     },
   ];
