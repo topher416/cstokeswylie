@@ -5,6 +5,12 @@ import { useState } from 'react';
 
 const Portfolio = () => {
   const imageMap = {
+    'New Play Sounding Series': [
+      '/images/NPSS.jpg',
+    ],
+    'Playwrights\' Lab Productions': [
+      '/images/playwrightslab.jpg',
+    ],
     'You Will Get Sick by Noah Diaz': [
       '/images/youwillgetsick1.jpg',
       '/images/youwillgetsick2.jpg',
