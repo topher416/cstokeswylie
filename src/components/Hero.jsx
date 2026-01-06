@@ -118,7 +118,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-4 md:mb-6 font-light">
-            Actor | Literary Manager | Theatre Administrator
+            Arts Administrator | New Play Development | Community Engagement
           </p>
 
           {/* Intro paragraph removed per request */}
@@ -128,7 +128,7 @@ const Hero = () => {
               onClick={() => scrollToSection('portfolio')}
               className="btn-primary w-full sm:w-auto"
             >
-              View Portfolio
+              See My Work
             </button>
             <button
               onClick={() => scrollToSection('about')}

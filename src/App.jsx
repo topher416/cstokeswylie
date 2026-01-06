@@ -3,6 +3,8 @@ import Hero from './components/Hero';
 import About from './components/About';
 import ArtistStatement from './components/ArtistStatement';
 import Experience from './components/Experience';
+import CommunityEngagement from './components/CommunityEngagement';
+import ArtsEducation from './components/ArtsEducation';
 import Performance from './components/Performance';
 import Portfolio from './components/Portfolio';
 import CriticalAcclaim from './components/CriticalAcclaim';
@@ -17,6 +19,8 @@ function App() {
       <Hero />
       <About />
       <Experience />
+      <CommunityEngagement />
+      <ArtsEducation />
       <Portfolio />
       <ArtistStatement />
       <Performance />

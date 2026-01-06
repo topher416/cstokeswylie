@@ -21,24 +21,23 @@ const About = () => {
           {/* Bio Content */}
           <div className="order-2 md:order-2 space-y-6">
             <div className="prose prose-lg">
-              <p className="text-text leading-relaxed">
-                I've spent two decades in theatre—both on stage and behind the scenes. As an AEA actor, I've performed
-                lead roles in everything from Chekhov to world premieres, including an <strong>Edgerton Foundation New Play
-                Award</strong> winner. I know what artists need because I've been in their shoes.
+              <p className="text-text leading-relaxed text-lg font-medium">
+                I build the infrastructure that lets artists make transformative theatre.
               </p>
 
               <p className="text-text leading-relaxed">
                 As Literary Manager at Salt Lake Acting Company (2018–2024), I read hundreds of scripts annually,
-                championed world premieres by nationally recognized playwrights (including Steve Yockey, creator of HBO's
-                "The Flight Attendant"), and helped shape six seasons of programming. I worked directly with playwrights
-                in developmental labs and built donor partnerships for new work.
+                championed world premieres by nationally recognized playwrights, and helped shape six seasons of
+                programming. I worked directly with playwrights in developmental labs, built donor partnerships for
+                new work, and created community engagement initiatives that connected productions to the organizations
+                and audiences they spoke to.
               </p>
 
               <p className="text-text leading-relaxed">
-                I believe the best theatre administration is invisible to audiences but essential to artists.
-                My work means keeping the trains running—managing budgets, writing grants, coordinating logistics—so
-                that playwrights, directors, and actors can focus on making transformative theatre. I bring both artistic
-                sensibility and operational expertise, understanding what makes great theatre from both sides of the table.
+                My background as an AEA actor informs everything I do—I know what artists need because I've been in
+                their shoes. But my focus is on the operational and relational work that makes great theatre possible:
+                managing budgets, writing grants, coordinating logistics, cultivating partnerships, and creating
+                inclusive spaces where artists can do their best work.
               </p>
             </div>
 
@@ -74,6 +73,9 @@ const About = () => {
                   'Grant Writing & Fundraising',
                   'Audience Development',
                   'Theatre Operations',
+                  'Community Partnerships',
+                  'EDI Implementation',
+                  'Arts Education',
                 ].map((specialty) => (
                   <span
                     key={specialty}
