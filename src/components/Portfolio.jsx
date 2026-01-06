@@ -31,17 +31,6 @@ const Portfolio = () => {
       '/images/funnything9cropped.jpg',
       '/images/funnything10.JPG',
     ],
-    '"Alyson Moss" — Harbur Gate by Kathleen Cahill': [
-      '/images/harburgate1cropped.jpg',
-      '/images/harburgate2cropped.jpg',
-      '/images/harburgate3cropped.jpg',
-    ],
-    '"Tanya" — Bull Shark Attack by Troy Deutsch': [
-      '/images/bullshark1.jpg',
-      '/images/bullshark2.jpg',
-      '/images/bullshark3.JPG',
-      '/images/slac_bullsharkattack_090416~4.jpg',
-    ],
   };
   const portfolioItems = [
     {
@@ -129,40 +118,6 @@ const Portfolio = () => {
         { href: 'https://www.saltlakeactingcompany.org/shows-ticketing/play-archive/item/1389-a-funny-thing-happened-on-the-way-to-the-gynecologic-oncology-unit-at-memorial-sloan-kettering-cancer-center-of-new-york-city', label: 'Salt Lake Acting Company — A Funny Thing Happened on the Way…' },
         { href: 'https://www.sltrib.com/artsliving/2018/09/30/help-actors-feel-safe/', label: 'To help actors feel safe during sex scenes, SLAC tries “intimacy directing”' },
         { href: 'https://www.cityweekly.net/BuzzBlog/archives/2018/09/20/theater-review-salt-lake-acting-companys-a-funny-thing-happened', label: 'CityWeekly — Theater review: SLAC\'s A Funny Thing Happened...' },
-      ],
-    },
-    {
-      id: 7,
-      title: '"Alyson Moss" — Harbur Gate by Kathleen Cahill',
-      category: 'World Premiere',
-      location: 'Salt Lake City, UT',
-      year: '2017',
-      description:
-        'World premiere of Kathleen Cahill\'s triptych about women in the military and the aftermath of war. Originated Alyson Moss; production developed through SLAC\'s new-play pipeline and supported by an Edgerton Foundation New Play Award. Press called the staging "powerful," highlighting stories drawn from Iraq/Afghanistan service members and MST (military sexual trauma).',
-      links: [
-        { href: 'https://www.saltlakeactingcompany.org/2017/item/1155-harbur-gate', label: 'Salt Lake Acting Company — Harbur Gate' },
-        { href: 'http://www.sltrib.com/home/4885212-155/in-salt-lake-world-premiere-kathleen', label: 'The Salt Lake Tribune — In Salt Lake, world premiere…' },
-        { href: 'https://saltlakemagazine.com/preview-harbur-gate-slac/', label: 'Salt Lake Magazine — Preview: Harbur Gate @ SLAC' },
-        { href: 'http://www.cityweekly.net/TheDailyFeed/archives/2017/02/08/salt-lake-acting-company-harbur-gate', label: 'CityWeekly — Harbur Gate' },
-        { href: 'https://saltlakemagazine.com/review-harbur-gate/', label: 'Salt Lake Magazine — Review: Harbur Gate' },
-        { href: 'http://www.sltrib.com/entertainment/4942712-155/powerful-salt-lake-production-of-harbur', label: 'The Salt Lake Tribune — Powerful Salt Lake production of Harbur Gate' },
-        { href: 'http://dailyutahchronicle.com/2017/02/14/slacs-harbur-gate-heroes-fighting-hope-review/', label: 'The Daily Utah Chronicle — “Harbur Gate”: Heroes Fighting for Hope (Review)' },
-      ],
-    },
-    {
-      id: 8,
-      title: '"Tanya" — Bull Shark Attack by Troy Deutsch',
-      category: 'World Premiere',
-      location: 'Salt Lake City, UT',
-      year: '2016',
-      description:
-        'Originated Tanya in Troy Deutsch\'s two-hander dark comedy about small-town longing, myth, and menace. The run opened SLAC\'s season; coverage framed it as "Shark Week(s) at SLAC)," noting the show\'s blend of physical comedy and emotional volatility.',
-      links: [
-        { href: 'https://www.saltlakeactingcompany.org/2017/item/1152-bull-shark-attack', label: 'Salt Lake Acting Company — Bull Shark Attack' },
-        { href: 'https://saltlakemagazine.com/shark-weeks-slac/', label: 'Shark Week(s) at SLAC — Salt Lake Magazine' },
-        { href: 'http://www.cityweekly.net/TheDailyFeed/archives/2016/09/07/salt-lake-acting-company-bull-shark-attack', label: 'CityWeekly — Bull Shark Attack' },
-        { href: 'http://www.sltrib.com/entertainment/4295199-155/salt-lake-acting-company-world-premiere', label: 'The Salt Lake Tribune — World premiere at SLAC' },
-        { href: 'http://www.cityweekly.net/utah/the-essential-aande-picks-for-sept-22-28/Content?oid=3467735', label: 'CityWeekly — The Essential A&E Picks for Sept. 22–28' },
       ],
     },
   ];
