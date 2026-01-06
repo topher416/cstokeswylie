@@ -22,15 +22,11 @@ const About = () => {
           <div className="order-2 md:order-2 space-y-6">
             <div className="prose prose-lg">
               <p className="text-text leading-relaxed text-lg font-medium">
-                Mission-driven nonprofit professional with a decade of experience in arts administration and development, specializing in grant writing, reporting, and translating impact-focused programs into compelling, equity-driven narratives.
+                An actor by trade, I am also an arts administrator and literary professional with a decade of experience supporting nonprofit theater at Salt Lake Acting Company (SLAC) through thoughtful programming, operational leadership, and development strategy. As Literary Manager, I oversaw season planning, auditions and casting, production scheduling, and cross-departmental coordination for mainstage productions and new-play development initiatives. As Development & Outreach Coordinator, I played a key role in researching funding opportunities, writing and reporting on grants, coordinating narratives and timelines, managing program budgets, and fostering genuine relationships with community partners and funders.
               </p>
 
               <p className="text-text leading-relaxed">
-                At Salt Lake Acting Company, I worked at the intersection of artistic programming and institutional fundraising—researching funding opportunities, writing and reporting on grants, coordinating timelines, and translating a production's stories and themes into clear, compelling language that resonates with funders. My literary management background means I know how to adapt voice and tone, integrate feedback, and center equity and lived experience in written materials.
-              </p>
-
-              <p className="text-text leading-relaxed">
-                I bring a collaborative, detail-oriented approach and thrive in environments that balance thoughtful project management with mission-driven creativity. My background as an AEA actor informs everything I do—I know what artists need because I've been in their shoes.
+                Across all areas of my work, I bridge artistic vision and administrative execution, translating stories and themes into clear, compelling language that resonates with audiences, funders, and the community at large.
               </p>
             </div>
 
