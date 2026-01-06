@@ -11,7 +11,7 @@ const Testimonial = () => {
 
           <div className="space-y-4 text-text leading-relaxed">
             <p>
-              I could write pages about her, but in light of the 300-word limit, I will focus on one specific project that exemplifies Cassie's insightful, collaborative, and wholly generous artistic spirit. The SLAC Playwrights' Lab was an intensive developmental workshop process for new plays. I produced the Lab for four years, and Cassie was an actor in it. Actors in the Lab were always a vital part of the process, but there were a small handful who not only brought incredible talent to their roles, but could also see the play as a whole, and through their investigation of the characters, offered the writers deep and meaningful insights into their plays.
+              I could write pages about her, but I will focus on one specific project that exemplifies Cassie's insightful, collaborative, and wholly generous artistic spirit. The SLAC Playwrights' Lab was an intensive developmental workshop process for new plays. I produced the Lab for four years, and Cassie was an actor in it. Actors in the Lab were always a vital part of the process, but there were a small handful who not only brought incredible talent to their roles, but could also see the play as a whole, and through their investigation of the characters, offered the writers deep and meaningful insights into their plays.
             </p>
 
             <p>
@@ -19,7 +19,7 @@ const Testimonial = () => {
             </p>
 
             <p className="font-medium italic">
-              She is one of the most compelling actors I have ever watched on stage, and one of the most diligent collaborators I have seen in the rehearsal room. She inspires her colleagues to do their best work, and she takes every opportunity to dig deeper and tell the purest truth. Utah is so lucky to have her.
+              She is one of the most compelling actors I have ever watched on stage, and one of the most diligent collaborators I have seen in the rehearsal room. She inspires her colleagues to do their best work, and she takes every opportunity to dig deeper and tell the purest truth. 
             </p>
           </div>
 
