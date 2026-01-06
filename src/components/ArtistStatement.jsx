@@ -1,16 +1,55 @@
 import { useState } from 'react';
+import RotatingBackground from './RotatingBackground';
 
 const ArtistStatement = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
+  // Acting photos for the background carousel
+  const desktopImages = [
+    '/images/deathofadriver3cropped.jpg',
+    '/images/deathofadriver5cropped.jpg',
+    '/images/funnything10.JPG',
+    '/images/funnything2.jpg',
+    '/images/funnything5cropped.jpg',
+    '/images/funnything9cropped.jpg',
+    '/images/harburgate1cropped.jpg',
+    '/images/harburgate3cropped.jpg',
+    '/images/harburgate4.jpg',
+    '/images/midsummer3.JPG',
+    '/images/midsummer5.JPG',
+    '/images/sleepinggiant1cropped.jpg',
+    '/images/sleepinggiant3cropped.jpg',
+    '/images/vibratorplay10.JPG',
+    '/images/vibratorplay2.JPG',
+    '/images/vibratorplay4.JPG',
+  ];
+
+  const mobileImages = [
+    '/images/deathofadriver3cropped_mobile_crop.jpg',
+    '/images/funnything10_mobile_crop.JPG',
+    '/images/funnything9cropped.jpg',
+    '/images/harburgate1cropped_mobile_crop.jpg',
+    '/images/midsummer5.JPG',
+    '/images/vibratorplay10_mobile_crop.JPG',
+  ];
+
   return (
-    <section id="statement" className="section-container bg-background-dark">
-      <div className="max-w-5xl mx-auto">
+    <section id="statement" className="relative section-container overflow-hidden">
+      {/* Rotating Background */}
+      <RotatingBackground
+        desktopImages={desktopImages}
+        mobileImages={mobileImages}
+        intervalMs={4000}
+      />
+      {/* Dark Overlay for Text Readability */}
+      <div className="absolute inset-0 bg-black/50 z-10"></div>
+
+      <div className="relative z-20 max-w-5xl mx-auto">
         <button
           onClick={() => setIsExpanded(!isExpanded)}
           className="w-full flex items-center justify-center gap-4 group"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-center group-hover:text-accent transition-colors">
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-white group-hover:text-accent transition-colors">
             Acting Philosophy
           </h2>
           <svg
@@ -30,7 +69,7 @@ const ArtistStatement = () => {
           </svg>
         </button>
 
-        <p className="text-center text-text-light text-lg mt-4 mb-8">
+        <p className="text-center text-white/80 text-lg mt-4 mb-8">
           {isExpanded ? 'Click to collapse' : 'Click to expand my approach to performance'}
         </p>
 
@@ -38,7 +77,7 @@ const ArtistStatement = () => {
           <div className="space-y-8 animate-fadeIn">
           {/* Opening - Who I Am */}
           <div className="prose prose-lg max-w-none">
-            <p className="text-text leading-relaxed text-lg">
+            <p className="text-white/90 leading-relaxed text-lg">
               I am an actor with a passion for live performance who primarily works in theater. I love rehearsing,
               diving into a script, researching, watching other people work, asking questions, discovering the "ah ha"
               moments, learning about myself, doing the thing that scares me, and sharing stories with people in real
@@ -49,10 +88,10 @@ const ArtistStatement = () => {
           </div>
 
           {/* Text and Breath - Core Philosophy */}
-          <div className="bg-white rounded-lg p-8 shadow-md">
-            <h3 className="text-2xl font-bold text-primary mb-4">My Practice: Text and Breath</h3>
+          <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 shadow-md">
+            <h3 className="text-2xl font-bold text-white mb-4">My Practice: Text and Breath</h3>
             <div className="prose prose-lg max-w-none space-y-4">
-              <p className="text-text leading-relaxed">
+              <p className="text-white/90 leading-relaxed">
                 As an actor I'm guided most expressly by the text and breath. The text serves as a map for the story,
                 the character's journey, their objectives, their expression, and their relationships. Breath is what
                 brings all of that to life, which I think sounds obvious, but is often easily forgotten. When I
@@ -61,7 +100,7 @@ const ArtistStatement = () => {
                 live more fully in my own truth and the truth of my character.
               </p>
 
-              <p className="text-text leading-relaxed">
+              <p className="text-white/90 leading-relaxed">
                 I can access our similarities and differences and what I as a person am bringing into the room every
                 time I show up to rehearse or perform. With a connection to text and the reminder to breathe, I can
                 engage my body and voice, listen and respond from an open place, and trust my intuition. I can also
@@ -74,14 +113,14 @@ const ArtistStatement = () => {
 
           {/* Values and Commitment */}
           <div className="prose prose-lg max-w-none">
-            <p className="text-text leading-relaxed text-lg">
+            <p className="text-white/90 leading-relaxed text-lg">
               I'm inspired by people who are brave enough to embrace and share their vulnerabilities because it reminds
               me I'm not alone—that we're all a little bit scared, that no one has it all entirely figured out, and
               since we don't make plays about people without conflict, I'm grateful for this reminder. I aspire to be
               an actor who listens to her fellow artists and advocates for all voices in the room.
             </p>
 
-            <p className="text-text leading-relaxed text-lg">
+            <p className="text-white/90 leading-relaxed text-lg">
               My eyes are open to the ways in which theater makers have failed historically excluded communities and
               the ways in which I have been complicit in that. As I move forward as an artist, I am fiercely dedicated
               to the continued peeling back of the onion, to using my voice, to creating theatrical spaces where
@@ -91,10 +130,10 @@ const ArtistStatement = () => {
           </div>
 
           {/* Reflection on Growth */}
-          <div className="bg-accent/10 rounded-lg p-8 border-l-4 border-accent">
-            <h3 className="text-2xl font-bold text-primary mb-4">Evolution as an Artist</h3>
+          <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border-l-4 border-accent">
+            <h3 className="text-2xl font-bold text-white mb-4">Evolution as an Artist</h3>
             <div className="prose prose-lg max-w-none space-y-4">
-              <p className="text-text leading-relaxed">
+              <p className="text-white/90 leading-relaxed">
                 Recent years have challenged my soul, my mind, and my heart in ways I never thought possible. For
                 artists whose work depends on their ability to gather, the pandemic was uniquely challenging, but it
                 also taught me quite a bit about my own resilience. My artistic endeavors shifted to remote work and
@@ -102,14 +141,14 @@ const ArtistStatement = () => {
                 zone in new and unexpected ways.
               </p>
 
-              <p className="text-text leading-relaxed">
+              <p className="text-white/90 leading-relaxed">
                 I also worked less, felt the weight of uncertainty, became more politically involved than I had ever
                 been before, and began my journey of learning and unlearning the history of this country and the ways
                 in which I've benefited from its deeply ingrained racism. I marched, I questioned, I read, I sat with
                 my discomfort. I wrote bad haikus.
               </p>
 
-              <p className="text-text leading-relaxed font-medium">
+              <p className="text-white/90 leading-relaxed font-medium">
                 As we continue to gather again at the theater, I feel both immensely grateful and deeply responsible—to
                 myself as an artist and as a citizen of the world. I'm excited to keep learning and questioning at this
                 stage of my career. I want to continue to search out artistic avenues that not only challenge me, but
