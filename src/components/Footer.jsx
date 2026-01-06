@@ -37,7 +37,7 @@ const Footer = () => {
                 Cassandra Stokes-Wylie
               </button>
               <p className="text-gray-300 leading-relaxed">
-                Arts Administration · Literary Management · Development
+                Arts Administrator · Literary Manager · Development Professional · Theatre Artist
               </p>
             </div>
 

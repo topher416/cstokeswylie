@@ -14,12 +14,12 @@ const Hero = () => {
       <div className="relative section-container text-left z-20 max-w-4xl p-4 md:p-8 lg:p-12 mb-24 md:mb-28 lg:mb-32">
         <div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-2 md:mb-4 text-white">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-2 md:mb-4 text-white whitespace-nowrap">
             Cassandra Stokes-Wylie
           </h1>
 
           <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-4 md:mb-6 font-light">
-            Arts Administration · Literary Management · Development
+            Arts Administrator · Literary Manager · Development Professional · Theatre Artist
           </p>
 
           {/* Intro paragraph removed per request */}
