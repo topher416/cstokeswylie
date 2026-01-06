@@ -3,6 +3,7 @@ import AutoCarousel from './AutoCarousel.jsx';
 import LocationTag from './LocationTag.jsx';
 
 const Performance = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
   const [showAll, setShowAll] = useState(false);
   const imageMap = {
     'Sleeping Giant': [
@@ -463,9 +464,36 @@ const Performance = () => {
   return (
     <section id="performance" className="section-container bg-background-dark">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
-          Performance Work
-        </h2>
+        <button
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="w-full flex items-center justify-center gap-4 group mb-6"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-center group-hover:text-accent transition-colors">
+            Performance Work
+          </h2>
+          <svg
+            className={`w-8 h-8 text-accent transition-transform duration-300 ${
+              isExpanded ? 'rotate-180' : ''
+            }`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+
+        <p className="text-center text-text-light text-lg mb-8">
+          {isExpanded ? 'Click to collapse' : 'Click to expand performance history'}
+        </p>
+
+        {isExpanded && (
+          <>
         <p className="text-center text-text-light text-lg mb-8 max-w-3xl mx-auto">
           Selected roles from regional theatre, including Salt Lake Acting Company, Milwaukee Repertory Theater,
           and New York companies. Trained at University of Utah (BFA), Milwaukee Rep, Shakespeare & Company,
@@ -607,6 +635,8 @@ const Performance = () => {
             </div>
           </div>
         </div>
+          </>
+        )}
       </div>
     </section>
   );
