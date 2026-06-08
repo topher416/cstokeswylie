@@ -62,6 +62,17 @@ const Experience = () => {
 
   const additionalExperience = [
     {
+      id: 6,
+      company: 'Chicago Public Schools',
+      title: 'Substitute Teacher',
+      dates: 'March 2026 – Present',
+      location: 'Chicago, IL',
+      highlights: [
+        'Lead classrooms across grade levels and subjects, adapting lesson plans to meet diverse student needs',
+        'Foster a supportive, engaging learning environment while maintaining classroom structure and continuity',
+      ],
+    },
+    {
       id: 5,
       company: 'DataAnnotation',
       title: 'AI Model Evaluator & Prompt Engineer',
