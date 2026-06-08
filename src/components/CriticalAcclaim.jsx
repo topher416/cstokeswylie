@@ -132,6 +132,15 @@ const CriticalAcclaim = () => {
                 Named by Les Roka, Utah Review - For the role of Sarah in "Death of a Driver" by Will Snider
               </p>
             </div>
+
+            <div className="md:col-span-2 text-center p-6 bg-accent/10 rounded-lg border-2 border-accent/30">
+              <p className="text-lg text-text mb-2">
+                <strong className="text-accent">Utah Individual Artist Emergency Funding</strong>
+              </p>
+              <p className="text-text-light">
+                Recipient, Utah Division of Arts &amp; Museums - According to a 2020 annual report
+              </p>
+            </div>
           </div>
         </div>
 

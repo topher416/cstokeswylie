@@ -14,6 +14,7 @@ const Experience = () => {
       highlights: [
         'Oversaw season planning, auditions and casting, and production scheduling for multiple mainstage productions',
         'Directed cross-departmental coordination to ensure alignment of artistic and production goals',
+        'Worked with a team to create study guides and educational materials for students, produced free performances for Title I schools, and collaborated on inclusive casting',
         'Negotiated and administered contracts with artists, playwrights, and agents',
         'Managed budgets and facilitated offers for creative team members',
         'Evaluated production needs for dialects, intimacy coaching, and fight choreography',

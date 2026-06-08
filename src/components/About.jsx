@@ -26,7 +26,7 @@ const About = () => {
               </p>
 
               <p className="text-text leading-relaxed">
-                As Literary Manager, I oversaw season planning, auditions and casting, production scheduling, and cross-departmental coordination for mainstage productions and new-play development initiatives. As Development & Outreach Coordinator, I played a key role in researching funding opportunities, writing and reporting on grants, coordinating narratives and timelines, managing program budgets, and fostering genuine relationships with community partners and funders. Across all areas of my work, I bridge artistic vision and administrative execution, translating stories and themes into clear, compelling language that resonates with audiences, funders, and the community at large.
+                As Literary Manager, I oversaw season planning, auditions and casting, production scheduling, and cross-departmental coordination for mainstage productions and new-play development initiatives, and played an integral role in TYA and teen acting workshops. As Development & Outreach Coordinator, I played a key role in researching funding opportunities, writing and reporting on grants, coordinating narratives and timelines, managing program budgets, and fostering genuine relationships with community partners and funders. Across all areas of my work, I bridge artistic vision and administrative execution, translating stories and themes into clear, compelling language that resonates with audiences, funders, and the community at large.
               </p>
             </div>
 
@@ -64,6 +64,7 @@ const About = () => {
                   'Cross-Departmental Collaboration',
                   'Community Partnerships',
                   'EDI Implementation',
+                  'Theatre Arts Education',
                 ].map((specialty) => (
                   <span
                     key={specialty}
