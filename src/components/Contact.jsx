@@ -89,7 +89,7 @@ const Contact = () => {
             Let's Work Together
           </h3>
           <p className="text-text-light mb-8">
-            Whether you're hiring for a literary manager role, need consulting on season programming,
+            Whether you're hiring for a literary manager role, an education role, need consulting on season programming,
             or want to discuss new play development—I'd love to hear from you.
           </p>
           <a href="mailto:cstokeswylie@gmail.com" className="btn-primary inline-block">
