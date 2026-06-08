@@ -138,7 +138,7 @@ const CriticalAcclaim = () => {
                 <strong className="text-accent">Utah Individual Artist Emergency Funding</strong>
               </p>
               <p className="text-text-light">
-                Recipient, Utah Division of Arts &amp; Museums - According to a 2020 annual report
+                Recipient, Utah Division of Arts &amp; Museums - 2020
               </p>
             </div>
           </div>
